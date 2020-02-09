@@ -106,10 +106,10 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
   public ngOnInit() {
     this.ctx = this.element.nativeElement.getContext('2d');
     this.refresh();
-    this.subs.push(this.themeService.colorschemesOptions.subscribe(r => this.themeChanged(r)));
+    this.subs.push(this.themeService.colorschemesOptions.subscribe(() => this.themeChanged()));
   }
 
-  private themeChanged(options: {}) {
+  private themeChanged() {
     this.refresh();
   }
 

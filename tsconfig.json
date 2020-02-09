@@ -30,5 +30,6 @@
     "strictInjectionParameters": true,
     "enableResourceInlining": true
   },
-  "include": [ "src/**/*" ],
+  "files": [ "src/public_api.ts" ],
+  "include": [ "src/**/*.ts" ],
 }
