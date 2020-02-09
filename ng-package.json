@@ -1,0 +1,14 @@
+{
+  "dest": "../../dist/ng2-charts",
+  "lib": {
+    "entryFile": "src/public_api.ts",
+    "umdModuleIds": {
+      "chart.js": "chart_js",
+      "lodash-es": "_"
+    }
+  },
+  "whitelistedNonPeerDependencies": [
+    "@types/chart.js",
+    "lodash-es"
+  ]
+}

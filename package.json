@@ -1,0 +1,34 @@
+{
+  "name": "ng-charts.js",
+  "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
+  "homepage": "https://github.com/RinMinase/ng-chart.js#readme",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "Rin Minase",
+  "main": "src/public_api.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinMinase/ng-chart.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RinMinase/ng-chart.js/issues"
+  },
+  "keywords": [
+    "chart.js",
+    "ng2-charts",
+    "angular"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^7.2.0 || ^8.0.0 || ^9.0.0",
+    "@angular/core": "^7.2.0 || ^8.0.0 || ^9.0.0",
+    "rxjs": "^6.5.4"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "@types/chart.js": "^2.7.48",
+    "lodash-es": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.3"
+  }
+}
