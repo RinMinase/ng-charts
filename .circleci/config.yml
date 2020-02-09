@@ -19,7 +19,7 @@ jobs:
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
 
       - run:
-          name: Installing dependenices for GitHub Release
+          name: Installing dependenices
           command: yarn install --frozen-lockfile
 
       - run:
@@ -28,7 +28,7 @@ jobs:
 
       - run:
           name: Publishing NPM Package
-          command: npm run release
+          command: npm run release-it
 
       # - run:
       #     name: Setup GitHub for Release
