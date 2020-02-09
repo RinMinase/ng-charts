@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/ng-charts
+    working_directory: ~/repo
     docker:
       - image: circleci/node:12.13.0
     branches:
@@ -16,7 +16,7 @@ jobs:
 
       - run:
           name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/ng-charts/.npmrc
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
 
       - run:
           name: Installing dependenices for GitHub Release
