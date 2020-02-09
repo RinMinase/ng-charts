@@ -51,6 +51,7 @@
     },
     "npm": {
       "publish": true,
+      "publishPath": "dist",
       "publishConfig": {
         "access": "public"
       }
