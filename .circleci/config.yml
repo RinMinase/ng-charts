@@ -1,0 +1,39 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/ng-charts
+    docker:
+      - image: circleci/node:12.13.0
+    branches:
+      only:
+        - master
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "fb:14:19:01:93:34:51:3e:0b:74:57:b4:c8:af:6a:9f"
+
+      - checkout
+
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/ng-charts/.npmrc
+
+      - run:
+          name: Installing dependenices for GitHub Release
+          command: yarn install --frozen-lockfile
+
+      - run:
+          name: Build library
+          command: npm run build
+
+      - run:
+          name: Publishing NPM Package
+          command: cd dist && npm publish --access=public && cd ..
+
+      # - run:
+      #     name: Setup GitHub for Release
+      #     command: git config --global user.email $GIT_EMAIL && git config --global user.name $GIT_NAME
+
+      # - run:
+      #     name: Publishing GitHub Release
+      #     command: npm run github-release
