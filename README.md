@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Beautiful charts for Angular2 based on ng2-chartjs. This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
+Beautiful charts for Angular based on ng2-chartjs.
+
+This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
 
 ## Usage & Demo
 
