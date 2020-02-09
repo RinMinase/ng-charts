@@ -1,4 +1,4 @@
-<h1 align="center"> Angular Chart.js (ng-chart.js) </h1>
+<h1 align="center"> Angular Chart.js </h1>
 
 ### Beautiful charts for Angular2 based on ng2-chartjs. This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
 
@@ -7,10 +7,10 @@
 
 ## Installation
 
-1. You can install ***ng2-charts*** using npm
+1. You can install ***ng-charts*** using npm
 
   ```bash
-  npm install ng2-charts
+  npm install @rinminase/ng-charts
   ```
 
 ## Stackblitz Starting Templates
@@ -28,7 +28,7 @@
 
 ### Import
 ```typescript
-import { ChartsModule } from 'ng2-charts';
+import { ChartsModule } from '@rinminase/ng-charts';
 
 // In your App's module:
 imports: [
@@ -111,7 +111,7 @@ The `overrides` object has the same type as the chart options object `ChartOptio
 
 Please follow this guidelines when reporting bugs and feature requests:
 
-1. Use [GitHub Issues](https://github.com/RinMinase/ng-chart.js/issues) board to report bugs and feature requests.
+1. Use [GitHub Issues](https://github.com/RinMinase/ng-charts/issues) board to report bugs and feature requests.
 2. Please **always** write steps to reproduce the error.
 
 Thanks for understanding!
@@ -128,7 +128,7 @@ Thanks for understanding!
 
   I wanted to do it this way:
 
-  ```npm install ng-chart.js```
+  ```npm install @rinminase/ng-charts```
 
   Which only adds one dependency to your project.
 
