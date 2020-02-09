@@ -1,5 +1,22 @@
 <h1 align="center"> Angular Chart.js </h1>
 
+<p align="center">
+    <a href="https://circleci.com/gh/RinMinase/ng-charts">
+        <img alt="Circle-CI" src="https://img.shields.io/circleci/build/github/RinMinase/ng-charts/master.svg?logo=circleci&style=for-the-badge">
+    </a>&nbsp;
+    <a href="https://semantic-release.gitbook.io/semantic-release/">
+        <img alt="Semantic-Release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=for-the-badge">
+    </a>
+</p>
+<p align="center">
+    <a href="https://bundlephobia.com/result?p=@rinminase/ng-charts">
+        <img alt="Bundle-Phobia" src="https://img.shields.io/bundlephobia/minzip/@rinminase/ng-charts?logo=webpack&logoColor=white&style=for-the-badge">
+    </a>&nbsp;
+    <a href="https://www.npmjs.com/package/@rinminase/ng-charts">
+        <img alt="NPM-DM" src="https://img.shields.io/npm/dw/@rinminase/ng-charts?logo=npm&style=for-the-badge">
+    </a>
+</p>
+
 ## Introduction
 
 Beautiful charts for Angular based on ng2-chartjs.
