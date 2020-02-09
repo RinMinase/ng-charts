@@ -17,8 +17,7 @@
   ],
   "scripts": {
     "build": "ng-packagr -p ng-package.json && rm -rf dist/out-tsc",
-    "release": "cd dist && npm publish --access=public && cd ..",
-    "release-it": "release-it --ci --no-increment --verbose"
+    "release": "release-it --ci --no-increment --verbose"
   },
   "peerDependencies": {
     "@angular/common": "^7.2.0 || ^8.0.0 || ^9.0.0",
