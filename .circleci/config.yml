@@ -8,10 +8,6 @@ jobs:
       only:
         - master
     steps:
-      # - add_ssh_keys:
-      #     fingerprints:
-      #       - "fb:14:19:01:93:34:51:3e:0b:74:57:b4:c8:af:6a:9f"
-
       - checkout
 
       - run:
@@ -29,11 +25,3 @@ jobs:
       - run:
           name: Publishing NPM Package
           command: npm run release
-
-      # - run:
-      #     name: Setup GitHub for Release
-      #     command: git config --global user.email $GIT_EMAIL && git config --global user.name $GIT_NAME
-
-      # - run:
-      #     name: Publishing GitHub Release
-      #     command: npm run github-release
