@@ -1,11 +1,13 @@
 <h1 align="center"> Angular Chart.js </h1>
 
-### Beautiful charts for Angular2 based on ng2-chartjs. This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
+## Introduction
 
-# Usage & Demo
+Beautiful charts for Angular2 based on ng2-chartjs. This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
+
+## Usage & Demo
 
 
-## Installation
+### Installation
 
 1. You can install ***ng-charts*** using npm
 
@@ -13,7 +15,7 @@
   npm install @rinminase/ng-charts
   ```
 
-## Stackblitz Starting Templates
+### Stackblitz Starting Templates
 
 * [Line Chart](https://stackblitz.com/edit/ng2-charts-line-template)
 * [Pie Chart](https://stackblitz.com/edit/ng2-charts-pie-template)
