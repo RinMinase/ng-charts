@@ -34,9 +34,13 @@
     "@angular/compiler-cli": "^9.0.0",
     "@angular/core": "^9.0.0",
     "@types/lodash-es": "^4.17.3",
+    "@types/node": "^13.7.0",
     "ng-packagr": "^9.0.0",
     "release-it": "^12.4.3",
-    "typescript": "^3.7.5"
+    "rxjs": "^6.5.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5",
+    "zone.js": "^0.10.2"
   },
   "release-it": {
     "git": {
