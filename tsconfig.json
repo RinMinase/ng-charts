@@ -29,6 +29,6 @@
     "strictInjectionParameters": true,
     "enableResourceInlining": true
   },
-  "files": [ "src/public_api.ts" ],
+  "files": [ "src/public_api.ts", "src/lib/base-chart.directive.ts" ],
   "include": [ "src/**/*.ts" ]
 }

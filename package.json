@@ -1,5 +1,5 @@
 {
-  "name": "ng-charts.js",
+  "name": "ng-chart.js",
   "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
   "homepage": "https://github.com/RinMinase/ng-chart.js#readme",
   "version": "0.1.0",
@@ -18,6 +18,9 @@
     "ng2-charts",
     "angular"
   ],
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
   "peerDependencies": {
     "@angular/common": "^7.2.0 || ^8.0.0 || ^9.0.0",
     "@angular/core": "^7.2.0 || ^8.0.0 || ^9.0.0",
@@ -29,6 +32,11 @@
     "lodash-es": "^4.17.11"
   },
   "devDependencies": {
-    "@types/lodash-es": "^4.17.3"
+    "@angular/compiler": "^9.0.0",
+    "@angular/compiler-cli": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@types/lodash-es": "^4.17.3",
+    "ng-packagr": "^9.0.0",
+    "typescript": "^3.7.5"
   }
 }

@@ -1,14 +1,14 @@
 import {
   Directive,
-  OnDestroy,
-  OnChanges,
-  OnInit,
-  Input,
-  Output,
-  EventEmitter,
-  ElementRef,
-  SimpleChanges,
   DoCheck,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  Output,
+  SimpleChanges,
 } from '@angular/core';
 import * as chartJs from 'chart.js';
 import { getColors } from './get-colors';
@@ -354,9 +354,9 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     this.subs.forEach(x => x.unsubscribe());
   }
 
-  public update(duration?: any) {
+  public update(duration?: any, lazy?: any) {
     if (this.chart) {
-      return this.chart.update(duration);
+      return this.chart.update(duration, lazy);
     }
   }
 
