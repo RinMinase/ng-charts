@@ -31,5 +31,5 @@
     "enableResourceInlining": true
   },
   "files": [ "src/public_api.ts" ],
-  "include": [ "src/**/*.ts" ],
+  "include": [ "src/**/*.ts" ]
 }
