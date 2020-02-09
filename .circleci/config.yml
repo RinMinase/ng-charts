@@ -8,9 +8,9 @@ jobs:
       only:
         - master
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "fb:14:19:01:93:34:51:3e:0b:74:57:b4:c8:af:6a:9f"
+      # - add_ssh_keys:
+      #     fingerprints:
+      #       - "fb:14:19:01:93:34:51:3e:0b:74:57:b4:c8:af:6a:9f"
 
       - checkout
 
