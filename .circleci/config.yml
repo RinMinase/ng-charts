@@ -28,8 +28,7 @@ jobs:
 
       - run:
           name: Publishing NPM Package
-          command: npm whoami
-          # command: cd dist && npm publish --access=public && cd ..
+          command: cd dist && npm publish --access=public && cd ..
 
       # - run:
       #     name: Setup GitHub for Release
