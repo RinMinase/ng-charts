@@ -51,9 +51,7 @@
       "requireCleanWorkingDir": false
     },
     "github": {
-      "release": false,
-      "releaseName": "${version}",
-      "assets": "dist/*.css"
+      "release": false
     },
     "npm": {
       "publish": true,
