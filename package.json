@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "@rinminase/ng-charts",
   "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
   "homepage": "https://github.com/RinMinase/ng-charts#readme",
@@ -16,7 +17,7 @@
     "angular"
   ],
   "scripts": {
-    "build": "ng-packagr -p ng-package.json && rm -rf dist/out-tsc",
+    "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
     "release": "release-it --ci --no-increment --verbose"
   },
   "peerDependencies": {
@@ -41,6 +42,21 @@
     "tslib": "^1.10.0",
     "typescript": "^3.7.5",
     "zone.js": "^0.10.2"
+  },
+  "ngPackage": {
+    "dest": "./dist",
+    "lib": {
+      "entryFile": "src/public_api.ts",
+      "umdModuleIds": {
+        "chart.js": "chart_js",
+        "lodash-es": "_"
+      }
+    },
+    "whitelistedNonPeerDependencies": [
+      "@types/chart.js",
+      "chart.js",
+      "lodash-es"
+    ]
   },
   "release-it": {
     "git": {
