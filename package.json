@@ -35,7 +35,7 @@
     "@angular/compiler-cli": "^9.0.2",
     "@angular/core": "^9.0.2",
     "@types/lodash-es": "^4.17.3",
-    "@types/node": "^13.7.1",
+    "@types/node": "^13.7.4",
     "ng-packagr": "^9.0.1",
     "release-it": "^12.4.3",
     "rxjs": "^6.5.4",
