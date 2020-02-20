@@ -36,6 +36,7 @@
     "@angular/core": "^9.0.2",
     "@types/lodash-es": "^4.17.3",
     "@types/node": "^13.7.4",
+    "bestzip": "^2.1.5",
     "ng-packagr": "^9.0.1",
     "release-it": "^12.6.0",
     "rxjs": "^6.5.4",
