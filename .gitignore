@@ -2,9 +2,12 @@
 
 # compiled output
 /dist
-dist.zip
+/dist*.zip
+/ng-charts-*-dist.zip
 /tmp
 /out-tsc
+/rename.js
+
 # Only exists if Bazel was run
 /bazel-out
 
