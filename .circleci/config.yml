@@ -23,5 +23,9 @@ jobs:
           command: yarn build
 
       - run:
-          name: Publishing NPM Package
+          name: Creating an archive for GitHub release
+          command: npm run zip
+
+      - run:
+          name: Publishing NPM and GitHub Packages
           command: npm run release
