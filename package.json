@@ -37,7 +37,7 @@
     "@types/lodash-es": "^4.17.3",
     "@types/node": "^13.7.4",
     "ng-packagr": "^9.0.1",
-    "release-it": "^12.4.3",
+    "release-it": "^12.6.0",
     "rxjs": "^6.5.4",
     "tslib": "^1.10.0",
     "typescript": "^3.7.5",
