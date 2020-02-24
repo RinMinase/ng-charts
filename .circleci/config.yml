@@ -44,8 +44,8 @@ jobs:
 
       - run:
           name: Building demo project
-          command: yarn build
+          command: cd demo && yarn build
 
       - run:
           name: Deploying demo project to netlify
-          command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --message "$COMMIT_MESSAGE" --prod --dir=dist
+          command: cd demo && ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --message "$COMMIT_MESSAGE" --prod --dir=dist
