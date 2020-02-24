@@ -4,6 +4,8 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { RouterModule } from "@angular/router";
 
+import { MatListModule } from "@angular/material/list";
+import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { AppComponent } from "./app.component";
@@ -39,6 +41,8 @@ import { ScatterChartComponent } from "./scatter-chart.component";
     RouterModule.forRoot([]),
     BrowserAnimationsModule,
 
+    MatListModule,
+    MatSidenavModule,
     MatToolbarModule,
   ],
   providers: [],
