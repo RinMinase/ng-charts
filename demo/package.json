@@ -1,0 +1,44 @@
+{
+  "name": "ng2-demo",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^9.0.2",
+    "@angular/common": "^9.0.2",
+    "@angular/core": "^9.0.2",
+    "@angular/material": "^9.0.1",
+    "@angular/platform-browser-dynamic": "^9.0.2",
+    "@angular/router": "^9.0.2",
+    "material-icons": "^0.3.1",
+    "rxjs": "^6.5.4",
+    "zone.js": "^0.10.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^0.900.3",
+    "@angular/cdk": "^9.0.1",
+    "@angular/cli": "^9.0.3",
+    "@angular/compiler": "^9.0.2",
+    "@angular/compiler-cli": "^9.0.2",
+    "@angular/forms": "^9.0.2",
+    "@angular/platform-browser": "^9.0.2",
+    "tslib": "^1.10.0",
+    "typescript": "~3.7.5"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions"
+  ],
+  "prettier": {
+    "printWidth": 80,
+    "bracketSpacing": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "endOfLine": "lf"
+  }
+}
