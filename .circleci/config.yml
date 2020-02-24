@@ -15,6 +15,10 @@ jobs:
       - checkout
 
       - run:
+          name: Setting up environmental variables
+          command: echo 'export COMMIT_MESSAGE=$(git log --format=%B -n 1 $CIRCLE_SHA1)' >> $BASH_ENV
+
+      - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
 
@@ -33,3 +37,15 @@ jobs:
       - run:
           name: Publishing NPM and GitHub Packages
           command: npm run release
+
+      - run:
+          name: Installing demo project dependencies
+          command: cd demo && yarn install --frozen-lockfile
+
+      - run:
+          name: Building demo project
+          command: yarn build
+
+      - run:
+          name: Deploying demo project to netlify
+          command: ./node_modules/.bin/netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_ACCESS_TOKEN --message "$COMMIT_MESSAGE" --prod --dir=dist
