@@ -3,7 +3,7 @@
   "name": "@rinminase/ng-charts",
   "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
   "homepage": "https://github.com/RinMinase/ng-charts#readme",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "author": "Rin Minase",
   "main": "src/public_api.ts",
