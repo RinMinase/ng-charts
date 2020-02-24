@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build --prod && echo /* /index.html 200> ./dist/_redirects"
+    "build": "ng build --prod && npm run redirects",
+    "deploy": "ng build --prod --no-progress && npm run redirects",
+    "redirects": "echo /* /index.html 200> ./dist/_redirects"
   },
   "private": true,
   "dependencies": {
