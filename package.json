@@ -14,7 +14,10 @@
   "keywords": [
     "chart.js",
     "ng2-charts",
-    "angular"
+    "ng2-chart",
+    "ng-chart",
+    "angular",
+    "charts"
   ],
   "scripts": {
     "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
