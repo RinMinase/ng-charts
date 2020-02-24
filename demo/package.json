@@ -1,13 +1,21 @@
 {
   "name": "ng2-demo",
+  "description": "A demo site for @rinminase/ng-charts",
+  "homepage": "https://ng-charts.netlify.com/",
   "version": "0.1.0",
+  "license": "MIT",
+  "author": "Rin Minase",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RinMinase/ng-charts.git"
+  },
   "scripts": {
     "start": "ng serve",
     "build": "ng build --prod && npm run redirects",
     "deploy": "ng build --prod --no-progress && npm run redirects",
     "redirects": "echo /* /index.html 200> ./dist/_redirects"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^9.0.2",
     "@angular/common": "^9.0.2",
