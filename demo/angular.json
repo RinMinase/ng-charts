@@ -25,7 +25,12 @@
             "main": "src/index.ts",
             "tsConfig": "tsconfig.json",
             "aot": true,
-            "styles": [ "src/index.scss" ]
+            "styles": [ "src/index.scss" ],
+            "assets": [{
+              "glob": "robots.txt",
+              "input": "src/",
+              "output": "/"
+            }]
           },
           "configurations": {
             "production": {
