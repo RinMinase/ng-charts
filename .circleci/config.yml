@@ -34,9 +34,9 @@ jobs:
           name: Creating an archive for GitHub release
           command: npm run zip
 
-      - run:
-          name: Publishing NPM and GitHub Packages
-          command: npm run release
+      # - run:
+      #     name: Publishing NPM and GitHub Packages
+      #     command: npm run release
 
       - run:
           name: Installing demo project dependencies
