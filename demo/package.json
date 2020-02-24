@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build --prod"
+    "build": "ng build --prod && echo /* /index.html 200> ./dist/_redirects"
   },
   "private": true,
   "dependencies": {
