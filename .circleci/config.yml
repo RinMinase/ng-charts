@@ -22,21 +22,21 @@ jobs:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
 
-      # - run:
-      #     name: Installing dependenices
-      #     command: yarn install --frozen-lockfile
+      - run:
+          name: Installing dependenices
+          command: yarn install --frozen-lockfile
 
-      # - run:
-      #     name: Build library
-      #     command: yarn build
+      - run:
+          name: Build library
+          command: yarn build
 
-      # - run:
-      #     name: Creating an archive for GitHub release
-      #     command: npm run zip
+      - run:
+          name: Creating an archive for GitHub release
+          command: npm run zip
 
-      # - run:
-      #     name: Publishing NPM and GitHub Packages
-      #     command: npm run release
+      - run:
+          name: Publishing NPM and GitHub Packages
+          command: npm run release
 
       - run:
           name: Installing demo project dependencies
