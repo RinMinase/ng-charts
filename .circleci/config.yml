@@ -44,7 +44,7 @@ jobs:
 
       - run:
           name: Building demo project
-          command: cd demo && yarn build
+          command: cd demo && yarn deploy
 
       - run:
           name: Deploying demo project to netlify
