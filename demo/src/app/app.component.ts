@@ -60,50 +60,17 @@ export class AppComponent implements OnInit {
   active: string = "Install";
 
   nav: Array<{ name: string; title: string }> = [
-    {
-      name: "Install",
-      title: "Installation",
-    },
-    {
-      name: "Line",
-      title: "Line Chart",
-    },
-    {
-      name: "Bar",
-      title: "Bar Chart",
-    },
-    {
-      name: "Doughnut",
-      title: "Doughnut Chart",
-    },
-    {
-      name: "Radar",
-      title: "Radar Chart",
-    },
-    {
-      name: "Pie",
-      title: "Pie Chart",
-    },
-    {
-      name: "Polar",
-      title: "Polar Area Chart",
-    },
-    {
-      name: "Bubble",
-      title: "Bubble Chart",
-    },
-    {
-      name: "Scatter",
-      title: "Scatter Chart",
-    },
-    {
-      name: "Dynamic",
-      title: "Dynamic Chart",
-    },
-    {
-      name: "Finance",
-      title: "Financial Chart",
-    },
+    { name: "Install", title: "Installation" },
+    { name: "Line", title: "Line Chart" },
+    { name: "Bar", title: "Bar Chart" },
+    { name: "Doughnut", title: "Doughnut Chart" },
+    { name: "Radar", title: "Radar Chart" },
+    { name: "Pie", title: "Pie Chart" },
+    { name: "Polar", title: "Polar Area Chart" },
+    { name: "Bubble", title: "Bubble Chart" },
+    { name: "Scatter", title: "Scatter Chart" },
+    { name: "Dynamic", title: "Dynamic Chart" },
+    { name: "Finance", title: "Financial Chart" },
   ];
 
   ngOnInit() {}
