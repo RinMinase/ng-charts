@@ -109,7 +109,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {}
 
   setActiveList(item: string) {
-    console.log(item);
     this.active = item;
   }
 }
