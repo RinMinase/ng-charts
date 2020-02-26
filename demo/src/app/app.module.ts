@@ -10,6 +10,8 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 
 import { AppComponent } from "./app.component";
 
+import { AboutComponent } from "./about.component";
+import { InstallationComponent } from "./installation.component";
 import { BarChartComponent } from "./bar-chart.component";
 import { BubbleChartComponent } from "./bubble-chart.component";
 import { DoughnutChartComponent } from "./doughnut-chart.component";
@@ -24,6 +26,9 @@ import { ScatterChartComponent } from "./scatter-chart.component";
 @NgModule({
   declarations: [
     AppComponent,
+
+    AboutComponent,
+    InstallationComponent,
     BarChartComponent,
     BubbleChartComponent,
     DoughnutChartComponent,
