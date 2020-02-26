@@ -994,10 +994,30 @@
     path-exists "^4.0.0"
     readdirp "^3.3.0"
 
-"@netlify/config@^0.1.12", "@netlify/config@^0.1.20", "@netlify/config@^0.1.7":
+"@netlify/config@^0.1.12", "@netlify/config@^0.1.20":
   version "0.1.20"
   resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.1.20.tgz#bd8e85124ae23df5bdf3e0f1f84db985a534a34b"
   integrity sha512-lHDVYdMo1mkktj61cTOx+LkXHpusWQZSja007dYf+/LbIO9K5l6HD3PQGFjZdszD31PTvcm9nBAyA8Tf0ctI9A==
+  dependencies:
+    chalk "^3.0.0"
+    configorama "^0.3.6"
+    deepmerge "^4.2.2"
+    dot-prop "^5.2.0"
+    filter-obj "^2.0.1"
+    find-up "^4.1.0"
+    indent-string "^4.0.0"
+    is-plain-obj "^2.1.0"
+    js-yaml "^3.13.1"
+    make-dir "^3.0.2"
+    map-obj "^4.1.0"
+    omit.js "^1.0.2"
+    path-exists "^4.0.0"
+    resolve "^1.15.1"
+
+"@netlify/config@^0.1.21":
+  version "0.1.21"
+  resolved "https://registry.yarnpkg.com/@netlify/config/-/config-0.1.21.tgz#92114fc6aa58a825b3c1f584ad4d1813e3826647"
+  integrity sha512-7q9OQe56AyQXEeR8Fpm/cCzuG/tGDHcx8suXwFXBhVA7/1t84XDldHBlgzw5O9cIlvdwy26gJi3lU+KpHmihAg==
   dependencies:
     chalk "^3.0.0"
     configorama "^0.3.6"
@@ -7315,13 +7335,13 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@^2.35.0:
-  version "2.35.0"
-  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.35.0.tgz#91859bf9ea448066826e0cdd51d1b8407ce24d11"
-  integrity sha512-ZvtklsaUXdVknQLzocmVuGAhbJ8kTJt9sRqwntCYe5w78SwPmDNlxWRk2xwfxxMVtdzT7iqLqhPQP8zg0EtO0g==
+netlify-cli@^2.36.0:
+  version "2.36.0"
+  resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-2.36.0.tgz#150d2b97dc5ac6f577cefb743f6e353ecaba1e5c"
+  integrity sha512-lmk5W1q6Vgdtv/bv0dR5/wTe4a8zw/09g1lbPeDoScNyiMytcUlh96PwX2euj9qG/MukPs70C8M1MbKe2ItH8w==
   dependencies:
     "@netlify/build" "^0.1.7"
-    "@netlify/config" "^0.1.7"
+    "@netlify/config" "^0.1.21"
     "@netlify/zip-it-and-ship-it" "^0.3.1"
     "@oclif/command" "^1.5.18"
     "@oclif/config" "^1.13.2"
@@ -7397,6 +7417,7 @@ netlify-cli@^2.35.0:
     update-notifier "^2.5.0"
     uuid "^3.3.3"
     wait-port "^0.2.2"
+    winston "^3.2.1"
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
