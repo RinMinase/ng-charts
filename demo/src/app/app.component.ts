@@ -59,7 +59,7 @@ import { Component, OnInit } from "@angular/core";
 export class AppComponent implements OnInit {
   active: string = "Install";
 
-  nav: Array<{ name: string; title: string; component?: any }> = [
+  nav: Array<{ name: string; title: string }> = [
     {
       name: "Install",
       title: "Installation",
