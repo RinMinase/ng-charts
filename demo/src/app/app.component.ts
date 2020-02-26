@@ -11,16 +11,16 @@ import { Component, OnInit } from "@angular/core";
 
     <mat-sidenav-container class="container">
       <mat-sidenav opened mode="side" class="sidenav">
-        <mat-list>
+        <mat-list class="sidenav-list">
           <mat-list-item
             *ngFor="let item of nav"
             class="c-pointer"
             (click)="setActiveList(item.name)"
-            [ngClass]="{ 'active-item': active === item.name }"
+            [ngClass]="{ 'active-item': active === item.name, div: item.div }"
           >
+            <i class="material-icons mr" *ngIf="item.icon">{{ item.icon }}</i>
             <span>{{ item.title }}</span>
           </mat-list-item>
-          <mat-divider class="logout-divider"></mat-divider>
           <mat-list-item
             class="c-pointer logout-menu"
             (click)="setActiveList('About')"
@@ -50,17 +50,18 @@ import { Component, OnInit } from "@angular/core";
   styles: [
     ".container { min-height: calc(100vh - 64px) }",
     ".sidenav { width: 200px }",
+    ".sidenav-list { height: 100%; display: flex; flex-direction: column; padding: 0 }",
     ".content { padding: 20px 20px }",
     ".active-item { background-color: #43A047; color: #FFF }",
-    ".logout-menu { position: absolute; bottom: 0 }",
-    ".logout-divider { position: absolute; bottom: 48px; width: 100% }",
+    ".div { border-bottom: 1px solid rgba(0,0,0,.12) }",
+    ".logout-menu { margin-top: auto; border-top: 1px solid rgba(0,0,0,.12) }",
   ],
 })
 export class AppComponent implements OnInit {
   active: string = "Install";
 
-  nav: Array<{ name: string; title: string }> = [
-    { name: "Install", title: "Installation" },
+  nav: Array<{ name: string; title: string; icon?: string; div?: boolean }> = [
+    { name: "Install", title: "Installation", icon: "extension", div: true },
     { name: "Line", title: "Line Chart" },
     { name: "Bar", title: "Bar Chart" },
     { name: "Doughnut", title: "Doughnut Chart" },
