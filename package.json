@@ -21,6 +21,8 @@
     "charts"
   ],
   "scripts": {
+    "demo": "cd demo && npm run start && cd ..",
+    "demo:build": "cd demo && npm run build && cd ..",
     "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
     "zip": "bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-charts-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
