@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@angular/compiler-cli@^9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-9.0.2.tgz#41868d23f2d062e072c9cff267c835151d237e8c"
-  integrity sha512-2AAZr1jX72OG9k1viVShiDGAwV9PZEcoDt80PXkUjLTUwWxicuSBKYauph47PzK/qzqWhdbvMbh8wCWHSLq0Qg==
+"@angular/compiler-cli@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-9.0.4.tgz#1dec287ef3c6428f1837b8176d74993e83db08c4"
+  integrity sha512-fcln3gJCV88r1CoCASIathOd7kpLJ1c8l4t6P1CQG/MCocxMvVa8bI5LRKTcQ5VTnR46Ne9+5HegIRPk7EePBQ==
   dependencies:
     canonical-path "1.0.0"
     chokidar "^3.0.0"
@@ -17,17 +17,18 @@
     reflect-metadata "^0.1.2"
     semver "^6.3.0"
     source-map "^0.6.1"
+    sourcemap-codec "^1.4.8"
     yargs "13.1.0"
 
-"@angular/compiler@^9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.0.2.tgz#be238eb2e575e2945f8e88c4ae09d99b280b797d"
-  integrity sha512-IWlKn5v3y7k1Z2K2wfNNzbn9xgA4fFlWyPe9QpdS8iy6/bPe5GfKhHbMYIza5eIhPXDN93zdEptiAIXGP3kLBQ==
+"@angular/compiler@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.0.4.tgz#038c9cdbf76f1cce47bd1b355c7d212cc89b18f9"
+  integrity sha512-+Ku8RUU00yHaKVkVw6YIfM3c5Gmvas5gJcEleiagkLbc1f/jKk1cY4gaUP6xn4TLypFM7NQglneWd+E+8wh0hQ==
 
-"@angular/core@^9.0.2":
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.0.2.tgz#250093b6a4d3137e2cc30e73e6cee919f1386165"
-  integrity sha512-ccVPR6RZo2s9O9phO0TJ60QZ0WA7qfUMzo0xnpBW0XGcbTzLEn9upvs+0PX64f9UpnHz/MQo0wsqYvTLuoz7Yw==
+"@angular/core@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.0.4.tgz#6baa5ec6c594b47de541e47f4aa37241adec393a"
+  integrity sha512-6RqQb1GO2uglSlgiGbxhvy8plztZtABCWLRn0X+T1PnrxoqgxqA5WkKJjGxao+1M/ECW1V0fw4Xy7DE6KvAJwQ==
 
 "@babel/code-frame@^7.0.0":
   version "7.8.3"
@@ -2801,7 +2802,7 @@ source-map@^0.7.3:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
-sourcemap-codec@^1.4.4:
+sourcemap-codec@^1.4.4, sourcemap-codec@^1.4.8:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
