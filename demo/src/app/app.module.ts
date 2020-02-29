@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
@@ -44,6 +45,7 @@ import { ScatterChartComponent } from "./scatter-chart.component";
     BrowserModule,
     BrowserAnimationsModule,
 
+    MatButtonModule,
     MatListModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -51,4 +53,4 @@ import { ScatterChartComponent } from "./scatter-chart.component";
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

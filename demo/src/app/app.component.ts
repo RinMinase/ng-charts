@@ -7,6 +7,16 @@ import { Component, OnInit } from "@angular/core";
       <i class="material-icons c-pointer">menu</i>
       <span class="c-pointer ml-1">Angular Charts</span>
       <span style="flex: 1 1 auto;"></span>
+      <a
+        href="https://github.com/RinMinase/ng-charts"
+        mat-raised-button
+        color="accent"
+        target="_blank"
+        rel="noopener"
+      >
+        <i class="material-icons mr">code</i>
+        <span>Source Code</span>
+      </a>
     </mat-toolbar>
 
     <mat-sidenav-container class="container">
