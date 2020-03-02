@@ -21,6 +21,9 @@
     "charts"
   ],
   "scripts": {
+    "dev:setup": "npm run dev:ng && npm run dev:prettier",
+    "dev:ng": "code --install-extension Angular.ng-template --force",
+    "dev:prettier": "code --install-extension esbenp.prettier-vscode --force ",
     "demo": "cd demo && npm run start && cd ..",
     "demo:build": "cd demo && npm run build && cd ..",
     "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
