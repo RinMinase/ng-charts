@@ -58,13 +58,34 @@ import { Component, OnInit } from "@angular/core";
     </mat-sidenav-container>
   `,
   styles: [
-    ".container { min-height: calc(100vh - 64px) }",
-    ".sidenav { width: 200px }",
-    ".sidenav-list { height: 100%; display: flex; flex-direction: column; padding: 0 }",
-    ".content { padding: 20px 20px }",
-    ".active-item { background-color: #43A047; color: #FFF }",
-    ".div { border-bottom: 1px solid rgba(0,0,0,.12) }",
-    ".logout-menu { margin-top: auto; border-top: 1px solid rgba(0,0,0,.12) }",
+    `
+      .container {
+        min-height: calc(100vh - 64px);
+      }
+      .sidenav {
+        width: 200px;
+      }
+      .sidenav-list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      .content {
+        padding: 20px 20px;
+      }
+      .active-item {
+        background-color: #43a047;
+        color: #fff;
+      }
+      .div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      }
+      .logout-menu {
+        margin-top: auto;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+      }
+    `,
   ],
 })
 export class AppComponent implements OnInit {
