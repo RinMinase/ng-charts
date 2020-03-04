@@ -46,7 +46,7 @@
     "@types/node": "^13.7.7",
     "bestzip": "^2.1.5",
     "ng-packagr": "^9.0.2",
-    "release-it": "^12.6.2",
+    "release-it": "^12.6.3",
     "rxjs": "^6.5.4",
     "ts-node": "^8.6.2",
     "tslib": "^1.11.1",
