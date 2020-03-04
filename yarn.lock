@@ -208,10 +208,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/chart.js@^2.9.14":
-  version "2.9.14"
-  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.9.14.tgz#d374e0586d164c3c45774bfae29f2c580e0935dd"
-  integrity sha512-lIyfmshUIwrJaS5TYleOKd8+0CTy/eFPu7djcphvdy97xdSxMNG25wSYQjFitm2qkgjVjQfQ6YW6lSGlTlg8eA==
+"@types/chart.js@^2.9.15":
+  version "2.9.15"
+  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.9.15.tgz#a6dba99e25258dbc0799000f11e57ed1f93ea5d9"
+  integrity sha512-PRxv/KYzmeVXDgp9nHJBoIQh9iJEyBm/OocnSrIEU9VZSNW5lcbXVkYjkb4V78VGGJESf57tk7KxK1LBAccOAQ==
   dependencies:
     moment "^2.10.2"
 

@@ -34,7 +34,7 @@
     "rxjs": "^6.5.4"
   },
   "dependencies": {
-    "@types/chart.js": "^2.9.14",
+    "@types/chart.js": "^2.9.15",
     "chart.js": "^2.9.3",
     "lodash-es": "^4.17.15"
   },
