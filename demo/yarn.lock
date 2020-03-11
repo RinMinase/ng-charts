@@ -1335,12 +1335,12 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rinminase/ng-charts@^1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.3.2.tgz#ef9a244eca8fe8eabcd7152bab4000ae607fe0c8"
-  integrity sha512-q6PojPqHCzzQpgVguU8RaTo9rbdtZfjTrAwMpvH7YgryFH6nftimACE4s/UibX+iRbrfCJ8EAiyesWaaCLHrpg==
+"@rinminase/ng-charts@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.3.3.tgz#e3123f7bb6a1f076acf15221460d5f123faf5f97"
+  integrity sha512-AnyIMLm4FRcu9PfhsKkyUEf3nHL/j6lMWrcvttdKly4mK+1W6mqKj3yZkJIXFPptyAjU7cqRn2tJNTlZgA/Mxg==
   dependencies:
-    "@types/chart.js" "^2.9.14"
+    "@types/chart.js" "^2.9.15"
     chart.js "^2.9.3"
     lodash-es "^4.17.15"
 
@@ -1384,7 +1384,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@types/chart.js@^2.9.14":
+"@types/chart.js@^2.9.15":
   version "2.9.15"
   resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.9.15.tgz#a6dba99e25258dbc0799000f11e57ed1f93ea5d9"
   integrity sha512-PRxv/KYzmeVXDgp9nHJBoIQh9iJEyBm/OocnSrIEU9VZSNW5lcbXVkYjkb4V78VGGJESf57tk7KxK1LBAccOAQ==
