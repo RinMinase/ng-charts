@@ -37,7 +37,7 @@
     "rxjs": "^6.5.4"
   },
   "dependencies": {
-    "@types/chart.js": "^2.9.15",
+    "@types/chart.js": "^2.9.16",
     "chart.js": "^2.9.3",
     "lodash-es": "^4.17.15"
   },
@@ -46,7 +46,7 @@
     "@angular/compiler-cli": "^9.1.0",
     "@angular/core": "^9.1.0",
     "@types/lodash-es": "^4.17.3",
-    "@types/node": "^13.9.1",
+    "@types/node": "^13.9.5",
     "bestzip": "^2.1.5",
     "ng-packagr": "^9.1.0",
     "release-it": "^13.1.1",
