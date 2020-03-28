@@ -3,7 +3,7 @@
   "name": "@rinminase/ng-charts",
   "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
   "homepage": "https://ng-charts.netlify.com/",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "license": "MIT",
   "author": "Rin Minase",
   "main": "src/public_api.ts",
