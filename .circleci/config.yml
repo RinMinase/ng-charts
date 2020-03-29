@@ -43,6 +43,10 @@ jobs:
           command: cd demo && yarn install --frozen-lockfile
 
       - run:
+          name: Compiling for Ivy Renderer
+          command: cd demo && yarn ngcc
+
+      - run:
           name: Building demo project
           command: cd demo && yarn deploy
 
