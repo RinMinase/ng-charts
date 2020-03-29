@@ -47,6 +47,10 @@ jobs:
           command: cd demo && yarn ngcc
 
       - run:
+          name: Testing compilation for Ivy Renderer
+          command: cd demo && yarn ngcc
+
+      - run:
           name: Building demo project
           command: cd demo && yarn deploy
 
