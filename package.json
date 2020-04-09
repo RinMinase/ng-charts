@@ -46,7 +46,6 @@
     "@angular/compiler-cli": "^9.1.1",
     "@angular/core": "^9.1.1",
     "@types/lodash-es": "^4.17.3",
-    "@types/node": "^13.11.1",
     "bestzip": "^2.1.5",
     "ng-packagr": "^9.1.0",
     "release-it": "^13.5.2",

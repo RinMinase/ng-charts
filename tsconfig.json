@@ -13,7 +13,6 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "typeRoots": [ "node_modules/@types" ],
-    "types": [ "node" ],
     "lib": [ "dom", "es2018" ]
   },
   "angularCompilerOptions": {
