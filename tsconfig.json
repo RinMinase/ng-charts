@@ -21,7 +21,8 @@
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
-    "enableResourceInlining": true
+    "enableResourceInlining": true,
+    "disableTypeScriptVersionCheck": true
   },
   "files": [ "src/public_api.ts", "src/lib/base-chart.directive.ts" ],
   "include": [ "src/**/*.ts" ]
