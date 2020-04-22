@@ -1400,10 +1400,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rinminase/ng-charts@^1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.5.1.tgz#6c2a2c8d041231e97f955993ea7fd5a4ca689a6f"
-  integrity sha512-Cr/MLQoHMckRrCa825khpBiTF93/ThjerC+TTKuntzD6+gN2grCU8NXp++ZvSEH0ESM/SJGoywdVWoJuWhuIzg==
+"@rinminase/ng-charts@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.5.2.tgz#328b6002264ae346732658979bef11ecc2176d9c"
+  integrity sha512-RD1jpCvZ/L1EFT+w9uqgmQ3dtPEJ2qtYKjlFEGqnlHfLqkIKw710foyaEaiOVC//GaZ5fJHgSjSgye8ULOubbA==
   dependencies:
     "@types/chart.js" "^2.9.19"
     chart.js "^2.9.3"
