@@ -1424,10 +1424,10 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rinminase/ng-charts@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.5.2.tgz#328b6002264ae346732658979bef11ecc2176d9c"
-  integrity sha512-RD1jpCvZ/L1EFT+w9uqgmQ3dtPEJ2qtYKjlFEGqnlHfLqkIKw710foyaEaiOVC//GaZ5fJHgSjSgye8ULOubbA==
+"@rinminase/ng-charts@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.5.3.tgz#beb7915c3ab0979f9019fdf3078abd50a815d48d"
+  integrity sha512-/oRbVwxopR7D7NIo3p+gFAMXE6Jml76uXu6bC7N+f46T85u8ykbDsGIApbGFMkoW/jGkAWW22cVeNiKOqe4b7g==
   dependencies:
     "@types/chart.js" "^2.9.19"
     chart.js "^2.9.3"
