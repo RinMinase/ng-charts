@@ -39,7 +39,8 @@
   "dependencies": {
     "@types/chart.js": "2.9.18",
     "chart.js": "^2.9.3",
-    "lodash-es": "^4.17.15"
+    "lodash-es": "^4.17.15",
+    "moment": "2.24.0"
   },
   "devDependencies": {
     "@angular/compiler": "^9.1.4",
