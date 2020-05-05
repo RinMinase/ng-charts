@@ -40,7 +40,7 @@
     "@types/chart.js": "2.9.18",
     "chart.js": "^2.9.3",
     "lodash-es": "^4.17.15",
-    "moment": "2.24.0"
+    "moment": "~2.24.0"
   },
   "devDependencies": {
     "@angular/compiler": "^9.1.4",
@@ -56,6 +56,9 @@
     "typescript": "^3.8.3",
     "zone.js": "^0.10.3"
   },
+  "resolutions": {
+    "moment": "~2.24.0"
+  },
   "ngPackage": {
     "dest": "./dist",
     "lib": {
@@ -68,7 +71,8 @@
     "whitelistedNonPeerDependencies": [
       "@types/chart.js",
       "chart.js",
-      "lodash-es"
+      "lodash-es",
+      "moment"
     ]
   },
   "release-it": {
