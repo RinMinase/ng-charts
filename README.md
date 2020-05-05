@@ -31,7 +31,7 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
 1. You can install ***ng-charts*** using npm
 
   ```bash
-  yarn add @rinminase/ng-charts
+  npm install @rinminase/ng-charts
   ```
 
 ### Stackblitz Starting Templates
