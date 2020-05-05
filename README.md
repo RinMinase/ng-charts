@@ -34,14 +34,6 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
   yarn add @rinminase/ng-charts
   ```
 
-2. **(Temporary)** As of this time there has been an warning generated in compiling using the latest moment library. To fix this. please add these lines in your `package.json`. [[1]](https://github.com/moment/moment/issues/4505).
-
-  ```json
-  "resolutions": {
-    "**/moment": "2.24.0"
-  }
-  ```
-
 ### Stackblitz Starting Templates
 
 * [Line Chart](https://stackblitz.com/edit/ng2-charts-line-template)
