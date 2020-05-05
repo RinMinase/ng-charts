@@ -34,6 +34,12 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
   npm install @rinminase/ng-charts
   ```
 
+2. **(Temporary)** As of this time there has been an issue in compiling using the latest moment library. So it's recommended to also install the temporary peer dependency. [[1]](https://github.com/moment/moment/issues/4505)
+
+  ```bash
+  npm install moment@2.24
+  ```
+
 ### Stackblitz Starting Templates
 
 * [Line Chart](https://stackblitz.com/edit/ng2-charts-line-template)
