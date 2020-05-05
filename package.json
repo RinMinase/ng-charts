@@ -14,11 +14,12 @@
   },
   "keywords": [
     "chart.js",
-    "ng2-charts",
-    "ng2-chart",
+    "ng-charts",
     "ng-chart",
     "angular",
-    "charts"
+    "charts",
+    "ng2-charts",
+    "ng2-chart"
   ],
   "scripts": {
     "dev:setup": "npm run dev:ng && npm run dev:prettier",
