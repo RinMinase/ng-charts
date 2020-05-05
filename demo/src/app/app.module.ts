@@ -6,8 +6,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatTabsModule } from "@angular/material/tabs";
 import { MatToolbarModule } from "@angular/material/toolbar";
 
+import { ChartsModule } from "@rinminase/ng-charts";
 import { AppComponent } from "./app.component";
 
 import { AboutComponent } from "./about.component";
@@ -44,10 +46,12 @@ import { ScatterChartComponent } from "./scatter-chart.component";
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
+    ChartsModule,
 
     MatButtonModule,
     MatListModule,
     MatSidenavModule,
+    MatTabsModule,
     MatToolbarModule,
   ],
   providers: [],
