@@ -38,7 +38,7 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
 
   ```json
   "resolutions": {
-    "moment": "2.24.0"
+    "**/moment": "2.24.0"
   }
   ```
 
