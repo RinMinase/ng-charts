@@ -36,14 +36,14 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
 
 ### Stackblitz Starting Templates
 
-* [Line Chart](https://stackblitz.com/edit/ng2-charts-line-template)
-* [Pie Chart](https://stackblitz.com/edit/ng2-charts-pie-template)
-* [Bar Chart](https://stackblitz.com/edit/ng2-charts-bar-template)
-* [Doughnut Chart](https://stackblitz.com/edit/ng2-charts-doughnut-template)
-* [Radar Chart](https://stackblitz.com/edit/ng2-charts-radar-template)
-* [Polar Area Chart](https://stackblitz.com/edit/ng2-charts-polar-area-template)
-* [Bubble Chart](https://stackblitz.com/edit/ng2-charts-bubble-template)
-* [Scatter Chart](https://stackblitz.com/edit/ng2-charts-scatter-template)
+* [Line Chart](https://stackblitz.com/edit/ng-charts-line)
+* [Pie Chart](https://stackblitz.com/edit/ng-charts-pie)
+* [Bar Chart](https://stackblitz.com/edit/ng-charts-bar)
+* [Doughnut Chart](https://stackblitz.com/edit/ng-charts-doughnut)
+* [Radar Chart](https://stackblitz.com/edit/ng-charts-radar)
+* [Polar Area Chart](https://stackblitz.com/edit/ng-charts-polar-area)
+* [Bubble Chart](https://stackblitz.com/edit/ng-charts-bubble)
+* [Scatter Chart](https://stackblitz.com/edit/ng-charts-scatter)
 
 ## API
 
