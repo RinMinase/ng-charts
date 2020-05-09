@@ -2,12 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-financial-chart",
-  template: `
-    <p>
-      financial-chart works!
-    </p>
-  `,
-  styles: [],
+  templateUrl: "./financial-chart.component.html",
 })
 export class FinancialChartComponent implements OnInit {
   constructor() {}

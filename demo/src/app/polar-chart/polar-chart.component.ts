@@ -2,12 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-polar-chart",
-  template: `
-    <p>
-      polar-chart works!
-    </p>
-  `,
-  styles: [],
+  templateUrl: "./polar-chart.component.html",
 })
 export class PolarChartComponent implements OnInit {
   constructor() {}

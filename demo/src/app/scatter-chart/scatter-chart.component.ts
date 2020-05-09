@@ -2,12 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-scatter-chart",
-  template: `
-    <p>
-      scatter-chart works!
-    </p>
-  `,
-  styles: [],
+  templateUrl: "./scatter-chart.component.html",
 })
 export class ScatterChartComponent implements OnInit {
   constructor() {}

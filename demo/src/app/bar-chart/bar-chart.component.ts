@@ -5,33 +5,7 @@ import * as chartlabels from "chartjs-plugin-datalabels";
 
 @Component({
   selector: "app-bar-chart",
-  template: `
-    <div>
-      <canvas
-        baseChart
-        chartType="bar"
-        [datasets]="data"
-        [labels]="labels"
-        [legend]="true"
-        [options]="options"
-        [plugins]="plugins"
-      ></canvas>
-      <button
-        mat-button
-        mat-raised-button
-        color="primary"
-        (click)="randomizer()"
-      >
-        Update
-      </button>
-      <div>
-        <mat-tab-group>
-          <mat-tab label="Markup"></mat-tab>
-          <mat-tab label="TypeScript"></mat-tab>
-        </mat-tab-group>
-      </div>
-    </div>
-  `,
+  templateUrl: "./bar-chart.component.html",
 })
 export class BarChartComponent implements OnInit {
   options: ChartOptions = {
