@@ -4,13 +4,13 @@ import { Component, OnInit } from "@angular/core";
   selector: "app-installation",
   template: `
     <div>
-      <h1>Angular Chart.js</h1>
+      <h1 class="mat-display-1 mt-1 mb-2">Angular Chart.js</h1>
 
       <ng-container *ngFor="let badge of badges">
         <p class="text-center">
           <ng-container *ngFor="let item of badge">
             <span [ngClass]="{ 'pr-2': item }">
-              <a [href]="item.link"><img [src]="item.badge"/></a>
+              <a [href]="item.link"><img [src]="item.badge" /></a>
             </span>
           </ng-container>
         </p>
