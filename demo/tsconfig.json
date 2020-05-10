@@ -1,13 +1,17 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "module": "esnext",
     "declaration": false,
     "inlineSources": false,
     "emitDecoratorMetadata": false,
     "downlevelIteration": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+    "paths": {
+      "@app/*": ["src/app/*"]
+    }
   },
   "files": [ "src/index.ts", ],
   "include": [],
