@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-bubble-chart",
-  templateUrl: "./bubble-chart.component.html",
+    selector: "app-bubble-chart",
+    templateUrl: "./bubble-chart.component.html",
 })
 export class BubbleChartComponent implements OnInit {
-  constructor() {}
+    constructor() {}
 
-  ngOnInit(): void {}
+    ngOnInit(): void {}
 }

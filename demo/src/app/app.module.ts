@@ -28,38 +28,38 @@ import { RadarChartComponent } from "./radar-chart/radar-chart.component";
 import { ScatterChartComponent } from "./scatter-chart/scatter-chart.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
+    declarations: [
+        AppComponent,
 
-    AboutComponent,
-    ContainerComponent,
-    InstallationComponent,
+        AboutComponent,
+        ContainerComponent,
+        InstallationComponent,
 
-    BarChartComponent,
-    BubbleChartComponent,
-    DoughnutChartComponent,
-    DynamicChartComponent,
-    FinancialChartComponent,
-    LineChartComponent,
-    PieChartComponent,
-    PolarChartComponent,
-    RadarChartComponent,
-    ScatterChartComponent,
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    ChartsModule,
-    HighlightModule,
+        BarChartComponent,
+        BubbleChartComponent,
+        DoughnutChartComponent,
+        DynamicChartComponent,
+        FinancialChartComponent,
+        LineChartComponent,
+        PieChartComponent,
+        PolarChartComponent,
+        RadarChartComponent,
+        ScatterChartComponent,
+    ],
+    imports: [
+        CommonModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        ChartsModule,
+        HighlightModule,
 
-    MatButtonModule,
-    MatListModule,
-    MatSidenavModule,
-    MatTabsModule,
-    MatToolbarModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
+        MatButtonModule,
+        MatListModule,
+        MatSidenavModule,
+        MatTabsModule,
+        MatToolbarModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
 })
 export class AppModule {}

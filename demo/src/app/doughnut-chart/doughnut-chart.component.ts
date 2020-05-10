@@ -1,11 +1,11 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-doughnut-chart",
-  templateUrl: "./doughnut-chart.component.html",
+    selector: "app-doughnut-chart",
+    templateUrl: "./doughnut-chart.component.html",
 })
 export class DoughnutChartComponent implements OnInit {
-  constructor() {}
+    constructor() {}
 
-  ngOnInit(): void {}
+    ngOnInit(): void {}
 }
