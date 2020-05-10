@@ -5563,6 +5563,16 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
+highlight.js@*:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.0.2.tgz#d2c732544f8f68bceaf0cefb4b0575bce8eddbee"
+  integrity sha512-2gMT2MHU6/2OjAlnaOE2LFdr9dwviDN3Q2lSw7Ois3/5uTtahbgYTkr4EPoY828ps+2eQWiixPTF8+phU6Ofkg==
+
+highlightjs-line-numbers.js@*:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/highlightjs-line-numbers.js/-/highlightjs-line-numbers.js-2.7.0.tgz#b202f7dc547cb9ab64d8b3ad571d834817815bdf"
+  integrity sha512-2kgZkfGy3TB6rF1o1XJtUThDyraLAFd6iiAIE1MEH89om8VwyHsal6BBnIOP2yOuq2TCuuGd0YD6aGHa6iq3/g==
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -7648,6 +7658,15 @@ netlify@^4.1.2, netlify@^4.1.5:
     tempy "^0.3.0"
     through2-filter "^3.0.0"
     through2-map "^3.0.0"
+
+ngx-highlightjs@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.0.2.tgz#d0b2578894093cdff8006111037d5fd953cb893b"
+  integrity sha512-qCQXMDFpbDv5u51rLfoc2G3mMq+l6uatFI+BZT0JkTYTvjdqOFkGWLzQ1hA5UPzyFc3dCpT+OLeVdtq6oX99dg==
+  dependencies:
+    highlight.js "*"
+    highlightjs-line-numbers.js "*"
+    tslib "^1.9.0"
 
 nice-try@^1.0.4:
   version "1.0.5"
