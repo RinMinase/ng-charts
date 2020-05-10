@@ -1,3 +1,16 @@
-<p>
-    line-chart works!
-</p>
+<div>
+    <canvas baseChart width="600" height="400"
+        chartType="line"
+        [colors]="chartColors"
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [legend]="chartLegend"
+        [options]="chartOptions"
+        [plugins]="chartPlugins"></canvas>
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
+</div>
