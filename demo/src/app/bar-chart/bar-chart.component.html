@@ -1,15 +1,15 @@
 <div>
     <canvas baseChart
         chartType="bar"
-        [datasets]="data"
-        [labels]="labels"
-        [legend]="true"
-        [options]="options"
-        [plugins]="plugins"></canvas>
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [legend]="chartLegend"
+        [options]="chartOptions"
+        [plugins]="chartPlugins"></canvas>
     <button mat-button
         mat-raised-button
         color="primary"
         (click)="randomizer()">
-        Update
+        Randomize
     </button>
 </div>
