@@ -15,6 +15,17 @@ $material-icons-font-path: "~material-icons/iconfont/";
 
 /** ================================================ */
 
+@import "~highlight.js/scss/vs2015";
+
+code {
+	font-family: monospace;
+	font-size: 1.05rem;
+
+	span { font-family: monospace; }
+}
+
+/** ================================================ */
+
 * { font-family: "Nunito Sans", Arial, Helvetica, sans-serif; }
 body { margin: 0; }
 

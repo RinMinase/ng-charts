@@ -43,16 +43,36 @@ import { Component, OnInit } from "@angular/core";
       </mat-sidenav>
       <mat-sidenav-content class="content">
         <app-installation *ngIf="active === 'Install'"></app-installation>
-        <app-line-chart *ngIf="active === 'Line'"></app-line-chart>
-        <app-bar-chart *ngIf="active === 'Bar'"></app-bar-chart>
-        <app-doughnut-chart *ngIf="active === 'Doughnut'"></app-doughnut-chart>
-        <app-radar-chart *ngIf="active === 'Radar'"></app-radar-chart>
-        <app-pie-chart *ngIf="active === 'Pie'"></app-pie-chart>
-        <app-polar-chart *ngIf="active === 'Polar'"></app-polar-chart>
-        <app-bubble-chart *ngIf="active === 'Bubble'"></app-bubble-chart>
-        <app-scatter-chart *ngIf="active === 'Scatter'"></app-scatter-chart>
-        <app-dynamic-chart *ngIf="active === 'Dynamic'"></app-dynamic-chart>
-        <app-financial-chart *ngIf="active === 'Finance'"></app-financial-chart>
+        <app-container *ngIf="active === 'Line'" type="line">
+          <app-line-chart></app-line-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Bar'" type="bar">
+          <app-bar-chart></app-bar-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Doughnut'" type="doughnut">
+          <app-doughnut-chart></app-doughnut-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Radar'" type="radar">
+          <app-radar-chart></app-radar-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Pie'" type="pie">
+          <app-pie-chart></app-pie-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Polar'" type="polar">
+          <app-polar-chart></app-polar-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Bubble'" type="bubble">
+          <app-bubble-chart></app-bubble-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Scatter'" type="scatter">
+          <app-scatter-chart></app-scatter-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Dynamic'" type="dynamic">
+          <app-dynamic-chart></app-dynamic-chart>
+        </app-container>
+        <app-container *ngIf="active === 'Finance'" type="finance">
+          <app-financial-chart></app-financial-chart>
+        </app-container>
         <app-about *ngIf="active === 'About'"></app-about>
       </mat-sidenav-content>
     </mat-sidenav-container>

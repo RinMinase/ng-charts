@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HighlightModule } from "ngx-highlightjs";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
@@ -12,8 +13,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { ChartsModule } from "@rinminase/ng-charts";
 import { AppComponent } from "./app.component";
 
-import { AboutComponent } from "./about.component";
-import { InstallationComponent } from "./installation.component";
+import { AboutComponent } from "./common/about.component";
+import { ContainerComponent } from "./common/container.component";
+import { InstallationComponent } from "./common/installation.component";
 import { BarChartComponent } from "./bar-chart/bar-chart.component";
 import { BubbleChartComponent } from "./bubble-chart/bubble-chart.component";
 import { DoughnutChartComponent } from "./doughnut-chart/doughnut-chart.component";
@@ -30,7 +32,9 @@ import { ScatterChartComponent } from "./scatter-chart/scatter-chart.component";
     AppComponent,
 
     AboutComponent,
+    ContainerComponent,
     InstallationComponent,
+
     BarChartComponent,
     BubbleChartComponent,
     DoughnutChartComponent,
@@ -47,6 +51,7 @@ import { ScatterChartComponent } from "./scatter-chart/scatter-chart.component";
     BrowserModule,
     BrowserAnimationsModule,
     ChartsModule,
+    HighlightModule,
 
     MatButtonModule,
     MatListModule,
