@@ -53,7 +53,7 @@
     "rxjs": "^6.5.5",
     "ts-node": "^8.10.1",
     "tslib": "^1.11.2",
-    "typescript": "^3.8.3",
+    "typescript": "~3.8.3",
     "zone.js": "^0.10.3"
   },
   "ngPackage": {
