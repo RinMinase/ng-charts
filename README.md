@@ -13,7 +13,7 @@
         <img alt="Bundle-Phobia" src="https://img.shields.io/bundlephobia/minzip/@rinminase/ng-charts?logo=webpack&logoColor=white&style=for-the-badge">
     </a>&nbsp;
     <a href="https://www.npmjs.com/package/@rinminase/ng-charts">
-        <img alt="NPM-DM" src="https://img.shields.io/npm/dw/@rinminase/ng-charts?logo=npm&style=for-the-badge">
+        <img alt="NPM-DM" src="https://img.shields.io/npm/dm/@rinminase/ng-charts?logo=npm&style=for-the-badge">
     </a>
 </p>
 
@@ -140,6 +140,8 @@ Thanks for understanding!
 ## FAQ
 
 ### Why re-create this library when there is already an existing one at [ng2-charts](https://github.com/valor-software/ng2-charts) created by Valor Software?
+
+- The library also doesn't support Angular 9 as of now.
 
 - The library doesn't seem to remove chart.js as its peer dependency, but needs it a lot. I seem to see the need to remove the additional library installed for your project and have this library install it instead
 
