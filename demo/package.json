@@ -38,9 +38,13 @@
     "@angular/compiler-cli": "^9.1.7",
     "@angular/forms": "^9.1.7",
     "@angular/platform-browser": "^9.1.7",
+    "highlight.js": "^9.18.1",
     "netlify-cli": "^2.51.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.2"
+  },
+  "resolutions": {
+    "**/highlight.js": "^9.18.1"
   },
   "browserslist": [
     "last 2 Chrome versions",
