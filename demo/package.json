@@ -23,7 +23,7 @@
     "@angular/core": "^9.1.7",
     "@angular/material": "^9.2.4",
     "@angular/platform-browser-dynamic": "^9.1.7",
-    "@rinminase/ng-charts": "^1.5.11",
+    "@rinminase/ng-charts": "^1.6.0",
     "chartjs-plugin-datalabels": "^0.7.0",
     "material-icons": "^0.3.1",
     "ngx-highlightjs": "^4.0.2",
