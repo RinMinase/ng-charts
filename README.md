@@ -161,7 +161,7 @@ Thanks for understanding!
 
 ## Built with
 * <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 9](https://angular.io/) - Library setup
-* <img width=20 height=20 src="https://www.typescriptlang.org/icons/icon-48x48.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
+* <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon.ico"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
-* <img width=20 height=20 src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png?alt=media"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
+* <img width=20 height=20 src="https://gblobscdn.gitbook.com/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
