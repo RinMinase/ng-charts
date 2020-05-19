@@ -28,13 +28,9 @@ export class ContainerComponent implements OnInit {
 
     ngOnInit(): void {
         if (charts[this.type]) {
-            console.log("type", this.type);
             this.heading = charts[this.type].heading;
             this.html = charts[this.type].html.default;
             this.ts = charts[this.type].ts.default;
-
-            console.log(this.html);
-            console.log(this.ts);
         }
     }
 }
