@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { HighlightModule } from "ngx-highlightjs";
+import { HighlightModule, HIGHLIGHT_OPTIONS } from "ngx-highlightjs";
 
 import { MatButtonModule } from "@angular/material/button";
 import { MatListModule } from "@angular/material/list";
@@ -59,7 +59,21 @@ import { ScatterChartComponent } from "./scatter-chart/scatter-chart.component";
         MatTabsModule,
         MatToolbarModule,
     ],
-    providers: [],
+    providers: [
+        {
+            provide: HIGHLIGHT_OPTIONS,
+            useValue: {
+                languages: getLanguages(),
+            },
+        },
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+export function getLanguages() {
+    return {
+        typescript: () => import("highlight.js/lib/languages/typescript"),
+        xml: () => import("highlight.js/lib/languages/xml"),
+    };
+}
