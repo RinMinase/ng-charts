@@ -39,7 +39,7 @@
     "@angular/forms": "^9.1.9",
     "@angular/platform-browser": "^9.1.9",
     "highlight.js": "^9.18.1",
-    "netlify-cli": "^2.51.0",
+    "netlify-cli": "^2.53.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.3"
   },
