@@ -9,15 +9,15 @@ import {
   OnInit,
   Output,
   SimpleChanges,
-} from '@angular/core';
-import * as chartJs from 'chart.js';
-import { getColors } from './get-colors';
-import { Color } from './color';
-import { ThemeService } from './theme.service';
-import { Subscription } from 'rxjs';
-import { cloneDeep } from 'lodash-es';
+} from "@angular/core";
+import * as chartJs from "chart.js";
+import { getColors } from "./get-colors";
+import { Color } from "./color";
+import { ThemeService } from "./theme.service";
+import { Subscription } from "rxjs";
+import { cloneDeep } from "lodash-es";
 
-export type SingleDataSet = (number[] | chartJs.ChartPoint[]);
+export type SingleDataSet = number[] | chartJs.ChartPoint[];
 export type MultiDataSet = (number[] | chartJs.ChartPoint[])[];
 export type SingleOrMultiDataSet = SingleDataSet | MultiDataSet;
 
@@ -46,13 +46,13 @@ interface OldState {
 enum UpdateType {
   Default,
   Update,
-  Refresh
+  Refresh,
 }
 
 @Directive({
   // tslint:disable-next-line:directive-selector
-  selector: 'canvas[baseChart]',
-  exportAs: 'base-chart'
+  selector: "canvas[baseChart]",
+  exportAs: "base-chart",
 })
 export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestroy, DoCheck {
   @Input() public data: SingleOrMultiDataSet;
@@ -100,11 +100,11 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
   public constructor(
     private element: ElementRef,
-    private themeService: ThemeService,
+    private themeService: ThemeService
   ) { }
 
   public ngOnInit() {
-    this.ctx = this.element.nativeElement.getContext('2d');
+    this.ctx = this.element.nativeElement.getContext("2d");
     this.refresh();
     this.subs.push(this.themeService.colorschemesOptions.subscribe(() => this.themeChanged()));
   }
@@ -131,7 +131,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     }
 
     if (this.data && this.data.length !== this.old.dataLength) {
-      this.old.dataLength = this.data && this.data.length || 0;
+      this.old.dataLength = (this.data && this.data.length) || 0;
 
       wantUpdate(UpdateType.Update);
     }
@@ -143,19 +143,29 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     }
 
     if (this.datasets && this.datasets.length !== this.old.datasetsLength) {
-      this.old.datasetsLength = this.datasets && this.datasets.length || 0;
+      this.old.datasetsLength = (this.datasets && this.datasets.length) || 0;
 
       wantUpdate(UpdateType.Update);
     }
 
-    if (this.datasets && this.datasets.filter((x, i) => x.data !== this.old.datasetsDataObjects[i]).length) {
-      this.old.datasetsDataObjects = this.datasets.map(x => x.data);
+    if (
+      this.datasets &&
+      this.datasets
+        .filter((x, i) => x.data !== this.old.datasetsDataObjects[i])
+        .length
+    ) {
+      this.old.datasetsDataObjects = this.datasets.map((x) => x.data);
 
       wantUpdate(UpdateType.Update);
     }
 
-    if (this.datasets && this.datasets.filter((x, i) => x.data.length !== this.old.datasetsDataLengths[i]).length) {
-      this.old.datasetsDataLengths = this.datasets.map(x => x.data.length);
+    if (
+      this.datasets &&
+      this.datasets
+        .filter((x, i) => x.data.length !== this.old.datasetsDataLengths[i])
+        .length
+    ) {
+      this.old.datasetsDataLengths = this.datasets.map((x) => x.data.length);
 
       wantUpdate(UpdateType.Update);
     }
@@ -169,8 +179,13 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     }
 
     // This smells of inefficiency, might need to revisit this
-    if (this.colors && this.colors.filter((x, i) => !this.colorsEqual(x, this.old.colors[i])).length) {
-      this.old.colors = this.colors.map(x => this.copyColor(x));
+    if (
+      this.colors &&
+      this.colors
+        .filter((x, i) => !this.colorsEqual(x, this.old.colors[i]))
+        .length
+    ) {
+      this.old.colors = this.colors.map((x) => this.copyColor(x));
 
       this.updateColors();
 
@@ -183,8 +198,13 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       wantUpdate(UpdateType.Update);
     }
 
-    if (this.labels && this.labels.filter((x, i) => !this.labelsEqual(x, this.old.labels[i])).length) {
-      this.old.labels = this.labels.map(x => this.copyLabel(x));
+    if (
+      this.labels &&
+      this.labels
+        .filter((x, i) => !this.labelsEqual(x, this.old.labels[i]))
+        .length
+    ) {
+      this.old.labels = this.labels.map((x) => this.copyLabel(x));
 
       wantUpdate(UpdateType.Update);
     }
@@ -225,8 +245,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       && Array.isArray(a) === Array.isArray(b)
       && (Array.isArray(a) || a === b)
       && (!Array.isArray(a) || a.length === b.length)
-      && (!Array.isArray(a) || a.filter((x, i) => x !== b[i]).length === 0)
-      ;
+      && (!Array.isArray(a) || a.filter((x, i) => x !== b[i]).length === 0);
   }
 
   copyColor(a: Color): Color {
@@ -280,8 +299,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       && (a.pointStyle === b.pointStyle)
       && (a.hoverBackgroundColor === b.hoverBackgroundColor)
       && (a.hoverBorderColor === b.hoverBorderColor)
-      && (a.hoverBorderWidth === b.hoverBorderWidth)
-      ;
+      && (a.hoverBorderWidth === b.hoverBorderWidth);
   }
 
   updateColors() {
@@ -302,19 +320,19 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
     // Check if the changes are in the data or datasets or labels or legend
 
-    if (changes.hasOwnProperty('data') && changes.data.currentValue) {
+    if (changes.hasOwnProperty("data") && changes.data.currentValue) {
       this.propagateDataToDatasets(changes.data.currentValue);
 
       wantUpdate(UpdateType.Update);
     }
 
-    if (changes.hasOwnProperty('datasets') && changes.datasets.currentValue) {
+    if (changes.hasOwnProperty("datasets") && changes.datasets.currentValue) {
       this.propagateDatasetsToData(changes.datasets.currentValue);
 
       wantUpdate(UpdateType.Update);
     }
 
-    if (changes.hasOwnProperty('labels')) {
+    if (changes.hasOwnProperty("labels")) {
       if (this.chart) {
         this.chart.data.labels = changes.labels.currentValue;
       }
@@ -322,7 +340,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       wantUpdate(UpdateType.Update);
     }
 
-    if (changes.hasOwnProperty('legend')) {
+    if (changes.hasOwnProperty("legend")) {
       if (this.chart) {
         this.chart.config.options.legend.display = changes.legend.currentValue;
         this.chart.generateLegend();
@@ -331,7 +349,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       wantUpdate(UpdateType.Update);
     }
 
-    if (changes.hasOwnProperty('options')) {
+    if (changes.hasOwnProperty("options")) {
       wantUpdate(UpdateType.Refresh);
     }
 
@@ -351,7 +369,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       this.chart.destroy();
       this.chart = void 0;
     }
-    this.subs.forEach(x => x.unsubscribe());
+    this.subs.forEach((x) => x.unsubscribe());
   }
 
   public update(duration?: any) {
@@ -403,7 +421,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       type: this.chartType,
       data: {
         labels: this.labels || [],
-        datasets
+        datasets,
       },
       plugins: this.plugins,
       options: mergedOptions,
@@ -412,7 +430,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     return chartConfig;
   }
 
-  public getChartBuilder(ctx: string/*, data:any[], options:any*/): Chart {
+  public getChartBuilder(ctx: string /*, data:any[], options:any*/): Chart {
     const chartConfig = this.getChartConfiguration();
     return new chartJs.Chart(ctx, chartConfig);
   }
@@ -422,15 +440,15 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       options = cloneDeep(options);
     }
     const keysToUpdate = Object.keys(overrides);
-    keysToUpdate.forEach(key => {
+    keysToUpdate.forEach((key) => {
       if (Array.isArray(overrides[key])) {
         const arrayElements = options[key];
         if (arrayElements) {
-          arrayElements.forEach(r => {
+          arrayElements.forEach((r) => {
             this.smartMerge(r, overrides[key][0], level + 1);
           });
         }
-      } else if (typeof (overrides[key]) === 'object') {
+      } else if (typeof overrides[key] === "object") {
         if (!(key in options)) {
           options[key] = {};
         }
@@ -453,14 +471,14 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       return null;
     }
     if (this.isMultiLineLabel(label)) {
-      return label.join(' ');
+      return label.join(" ");
     } else {
       return label;
     }
   }
 
   private propagateDatasetsToData(datasets: chartJs.ChartDataSets[]) {
-    this.data = this.datasets.map(r => r.data);
+    this.data = this.datasets.map((r) => r.data);
     if (this.chart) {
       this.chart.data.datasets = datasets;
     }
@@ -475,7 +493,10 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
         });
       } else {
         this.datasets = newDataValues.map((data: number[], index: number) => {
-          return { data, label: this.joinLabel(this.labels[index]) || `Label ${index}` };
+          return {
+            data,
+            label: this.joinLabel(this.labels[index]) || `Label ${index}`,
+          };
         });
         if (this.chart) {
           this.chart.data.datasets = this.datasets;
@@ -527,7 +548,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       this.chart = void 0;
     }
     if (this.ctx) {
-      this.chart = this.getChartBuilder(this.ctx/*, data, this.options*/);
+      this.chart = this.getChartBuilder(this.ctx /*, data, this.options*/);
     }
   }
 }
