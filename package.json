@@ -51,7 +51,7 @@
     "ng-packagr": "^9.1.5",
     "release-it": "^13.6.2",
     "rxjs": "^6.5.5",
-    "ts-node": "^8.10.1",
+    "ts-node": "^8.10.2",
     "tslib": "^1.13.0",
     "typescript": "~3.8.3",
     "zone.js": "^0.10.3"
