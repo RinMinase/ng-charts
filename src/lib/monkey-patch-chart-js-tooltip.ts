@@ -23,15 +23,15 @@ export function monkeyPatchChartJsTooltip() {
   }
 
   function drawBody(pt, vm, ctx) {
-    var bodyFontSize = vm.bodyFontSize;
-    var bodySpacing = vm.bodySpacing;
-    var bodyAlign = vm._bodyAlign;
-    var body = vm.body;
-    var drawColorBoxes = vm.displayColors;
-    var labelColors = vm.labelColors;
-    var xLinePadding = 0;
-    var colorX = drawColorBoxes ? getAlignedX(vm, "left") : 0;
-    var textColor;
+    let bodyFontSize = vm.bodyFontSize;
+    let bodySpacing = vm.bodySpacing;
+    let bodyAlign = vm._bodyAlign;
+    let body = vm.body;
+    let drawColorBoxes = vm.displayColors;
+    let labelColors = vm.labelColors;
+    let xLinePadding = 0;
+    let colorX = drawColorBoxes ? getAlignedX(vm, "left") : 0;
+    let textColor;
 
     ctx.textAlign = bodyAlign;
     ctx.textBaseline = "top";
@@ -44,7 +44,7 @@ export function monkeyPatchChartJsTooltip() {
     pt.x = getAlignedX(vm, bodyAlign);
 
     // Before Body
-    var fillLineOfText = function (line) {
+    let fillLineOfText = function (line) {
       ctx.fillText(line, pt.x + xLinePadding, pt.y);
       pt.y += bodyFontSize + bodySpacing;
     };
