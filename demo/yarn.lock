@@ -1483,14 +1483,15 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@rinminase/ng-charts@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.6.1.tgz#4fc65854160d96b674142bafe27798bfe0ffa8bc"
-  integrity sha512-peWR/65Qs6Qn7Q5OTkAFUwFCEujNADtLIEMfO0LNXYTyOyqN2ewrXeNNetT+5NAJhKT8abrBHeqpGtjWZKHdhw==
+"@rinminase/ng-charts@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-1.6.2.tgz#f57b23c6b9176fb2839d2eee787f8137bd4ef319"
+  integrity sha512-se0kEGhzjRZtuStIdA/ZZPDJ+4oGyWyJN9RLFAv9yWnyUcol3WxtSn4uvlV7+05wiNuC8Mc2/uY4Gn1xywFMJA==
   dependencies:
     "@types/chart.js" "2.9.18"
     chart.js "^2.9.3"
     lodash-es "^4.17.15"
+    tslib "^1.10.0"
 
 "@schematics/angular@9.1.7":
   version "9.1.7"
