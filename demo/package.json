@@ -41,7 +41,7 @@
     "highlight.js": "^9.18.1",
     "netlify-cli": "^2.53.0",
     "tslib": "^2.0.0",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "resolutions": {
     "**/highlight.js": "^9.18.1"
