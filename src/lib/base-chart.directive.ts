@@ -478,7 +478,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
   }
 
   private propagateDatasetsToData(datasets: chartJs.ChartDataSets[]) {
-    this.data = this.datasets.map((r) => r.data);
+    this.data = this.datasets.map((r) => r.data) as MultiDataSet;
     if (this.chart) {
       this.chart.data.datasets = datasets;
     }
