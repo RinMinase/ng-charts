@@ -7,19 +7,19 @@ declare class Chart {
 }
 
 export function monkeyPatchChartJsTooltip() {
-  if (typeof Chart === 'undefined') {
-    console.log('Chart not defined (guessing this is a universal build, and I don\'t know why this happens -- Aviad)');
+  if (typeof Chart === "undefined") {
+    console.log("Chart not defined");
     return;
   }
   Chart.Tooltip.prototype.drawBody = drawBody;
   const helpers = Chart.helpers;
 
   function getAlignedX(vm, align) {
-    return align === 'center'
+    return align === "center"
       ? vm.x + vm.width / 2
-      : align === 'right'
-        ? vm.x + vm.width - vm.xPadding
-        : vm.x + vm.xPadding;
+      : align === "right"
+      ? vm.x + vm.width - vm.xPadding
+      : vm.x + vm.xPadding;
   }
 
   function drawBody(pt, vm, ctx) {
@@ -30,12 +30,16 @@ export function monkeyPatchChartJsTooltip() {
     var drawColorBoxes = vm.displayColors;
     var labelColors = vm.labelColors;
     var xLinePadding = 0;
-    var colorX = drawColorBoxes ? getAlignedX(vm, 'left') : 0;
+    var colorX = drawColorBoxes ? getAlignedX(vm, "left") : 0;
     var textColor;
 
     ctx.textAlign = bodyAlign;
-    ctx.textBaseline = 'top';
-    ctx.font = helpers.fontString(bodyFontSize, vm._bodyFontStyle, vm._bodyFontFamily);
+    ctx.textBaseline = "top";
+    ctx.font = helpers.fontString(
+      bodyFontSize,
+      vm._bodyFontStyle,
+      vm._bodyFontFamily
+    );
 
     pt.x = getAlignedX(vm, bodyAlign);
 
@@ -49,9 +53,12 @@ export function monkeyPatchChartJsTooltip() {
     ctx.fillStyle = vm.bodyFontColor;
     helpers.each(vm.beforeBody, fillLineOfText);
 
-    xLinePadding = drawColorBoxes && bodyAlign !== 'right'
-      ? bodyAlign === 'center' ? (bodyFontSize / 2 + 1) : (bodyFontSize + 2)
-      : 0;
+    xLinePadding =
+      drawColorBoxes && bodyAlign !== "right"
+        ? bodyAlign === "center"
+          ? bodyFontSize / 2 + 1
+          : bodyFontSize + 2
+        : 0;
 
     // Draw body lines now
     helpers.each(body, function (bodyItem, i) {
