@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@angular/compiler-cli@^9.1.9":
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-9.1.9.tgz#e3c234d888074002fa5f6b7eab4f63f4ddbdb7bd"
-  integrity sha512-aLr2eaDlREN8XybgTbelvjtSZ8eAkxBPilnkddc700BgiC6ImyUSKaItOwa8bnjQwq4Wlz5eVG0ibsrX+5MXwg==
+"@angular/compiler-cli@^9.1.11":
+  version "9.1.11"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-9.1.11.tgz#39da68ddadb52008fe5231141707bddd3aa790b2"
+  integrity sha512-9qIxbtpRXOQnRm6inxCa5HuH87MSuMzuceD0YBVzl8v+vLtewon9KXYMmF4kTBhWa/LEa8FrajljLh0azf3VLg==
   dependencies:
     canonical-path "1.0.0"
     chokidar "^3.0.0"
@@ -20,15 +20,15 @@
     sourcemap-codec "^1.4.8"
     yargs "15.3.0"
 
-"@angular/compiler@^9.1.9":
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.1.9.tgz#cbf678ee28a0811a8ef3ee7be565d4911ff28ec7"
-  integrity sha512-kjFgaTB2ckr9lgmkS1dOGRT7kmzpQueydxsxXSHWgICNVE6F/u1PHyeSOyJRpxW0GnrkLq3QM2EUFnQGGga5bg==
+"@angular/compiler@^9.1.11":
+  version "9.1.11"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-9.1.11.tgz#4c7100f53c87f47e793e149427b8bdee44302381"
+  integrity sha512-MbVheCG0U8gt6xtiipau20N26mD2sXjLChVmRKgO6rbDruxboNMZfEd94q9NP9JRaUsVnjXvY7GMDldoymdXig==
 
-"@angular/core@^9.1.9":
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.1.9.tgz#db4241f867d6e14b81ed6e7c50334813c6ebfc10"
-  integrity sha512-q/DERgVU6vK2LtTcdVCGGBcoO424WsEfImh3Vcuy+P/ZVmthlDUC/+q+tSKt8MMf4hLpxFDQJE8vUSkktj7QEw==
+"@angular/core@^9.1.11":
+  version "9.1.11"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.1.11.tgz#7a92d27292212ed381be15f9000d4019867f1c7c"
+  integrity sha512-KAlEedBo761O1aeoTJVziOSHi8Fttk9ipvbDZXYT/o0W/KdVwubxP34g9t5aD8LCcF8+L0z4VLw++HjdJAUpwg==
 
 "@babel/code-frame@^7.0.0":
   version "7.10.1"

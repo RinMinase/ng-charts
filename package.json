@@ -44,9 +44,9 @@
     "lodash-es": "^4.17.15"
   },
   "devDependencies": {
-    "@angular/compiler": "^9.1.9",
-    "@angular/compiler-cli": "^9.1.9",
-    "@angular/core": "^9.1.9",
+    "@angular/compiler": "^9.1.11",
+    "@angular/compiler-cli": "^9.1.11",
+    "@angular/core": "^9.1.11",
     "@types/lodash-es": "^4.17.3",
     "bestzip": "^2.1.5",
     "ng-packagr": "^9.1.5",
