@@ -30,7 +30,13 @@
               "glob": "robots.txt",
               "input": "src/",
               "output": "/"
-            }]
+            }],
+            "allowedCommonJsDependencies": [
+              "chart.js",
+              "chartjs-plugin-datalabels",
+              "highlight.js",
+              "zone.js/dist/zone"
+            ]
           },
           "configurations": {
             "production": {
