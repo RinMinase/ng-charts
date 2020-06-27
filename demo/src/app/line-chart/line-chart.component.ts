@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ChartOptions, ChartDataSets } from "chart.js";
+import { ChartOptions } from "chart.js";
 import { Color, Label } from "@rinminase/ng-charts";
 import * as chartlabels from "chartjs-plugin-datalabels";
 
@@ -10,7 +10,7 @@ import { AppService } from "@app/app.service";
     templateUrl: "./line-chart.component.html",
 })
 export class LineChartComponent {
-    chartData: ChartDataSets[] = [
+    chartData = [
         { data: [65, 59, 80, 81, 56, 55, 40], label: "Series A" },
         { data: [28, 48, 40, 19, 86, 27, 90], label: "Series B" },
         {
