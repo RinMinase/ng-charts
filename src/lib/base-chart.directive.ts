@@ -21,7 +21,8 @@ export type SingleDataSet = number[] | chartJs.ChartPoint[];
 export type MultiDataSet = (number[] | chartJs.ChartPoint[])[];
 export type SingleOrMultiDataSet = SingleDataSet | MultiDataSet;
 
-export type PluginServiceGlobalRegistrationAndOptions = chartJs.PluginServiceGlobalRegistration & chartJs.PluginServiceRegistrationOptions;
+export type PluginServiceGlobalRegistrationAndOptions = chartJs.PluginServiceGlobalRegistration &
+  chartJs.PluginServiceRegistrationOptions;
 export type SingleLineLabel = string;
 export type MultiLineLabel = string[];
 export type Label = SingleLineLabel | MultiLineLabel;
@@ -54,7 +55,8 @@ enum UpdateType {
   selector: "canvas[baseChart]",
   exportAs: "base-chart",
 })
-export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestroy, DoCheck {
+export class BaseChartDirective
+  implements OnDestroy, OnChanges, OnInit, OnDestroy, DoCheck {
   @Input() public data: SingleOrMultiDataSet;
   @Input() public datasets: chartJs.ChartDataSets[];
   @Input() public labels: Label[];
@@ -64,8 +66,14 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
   @Input() public legend: boolean;
   @Input() public plugins: PluginServiceGlobalRegistrationAndOptions[];
 
-  @Output() public chartClick: EventEmitter<{ event?: MouseEvent, active?: {}[] }> = new EventEmitter();
-  @Output() public chartHover: EventEmitter<{ event: MouseEvent, active: {}[] }> = new EventEmitter();
+  @Output() public chartClick: EventEmitter<{
+    event?: MouseEvent;
+    active?: {}[];
+  }> = new EventEmitter();
+  @Output() public chartHover: EventEmitter<{
+    event: MouseEvent;
+    active: {}[];
+  }> = new EventEmitter();
 
   public ctx: string;
   public chart: Chart;
@@ -90,23 +98,29 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
   /**
    * Register a plugin.
    */
-  public static registerPlugin(plugin: PluginServiceGlobalRegistrationAndOptions) {
+  public static registerPlugin(
+    plugin: PluginServiceGlobalRegistrationAndOptions
+  ) {
     chartJs.Chart.plugins.register(plugin);
   }
 
-  public static unregisterPlugin(plugin: PluginServiceGlobalRegistrationAndOptions) {
+  public static unregisterPlugin(
+    plugin: PluginServiceGlobalRegistrationAndOptions
+  ) {
     chartJs.Chart.plugins.unregister(plugin);
   }
 
   public constructor(
     private element: ElementRef,
     private themeService: ThemeService
-  ) { }
+  ) {}
 
   public ngOnInit() {
     this.ctx = this.element.nativeElement.getContext("2d");
     this.refresh();
-    this.subs.push(this.themeService.colorschemesOptions.subscribe(() => this.themeChanged()));
+    this.subs.push(
+      this.themeService.colorschemesOptions.subscribe(() => this.themeChanged())
+    );
   }
 
   private themeChanged() {
@@ -150,8 +164,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
     if (
       this.datasets &&
-      this.datasets
-        .filter((x, i) => x.data !== this.old.datasetsDataObjects[i])
+      this.datasets.filter((x, i) => x.data !== this.old.datasetsDataObjects[i])
         .length
     ) {
       this.old.datasetsDataObjects = this.datasets.map((x) => x.data);
@@ -161,9 +174,9 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
     if (
       this.datasets &&
-      this.datasets
-        .filter((x, i) => x.data.length !== this.old.datasetsDataLengths[i])
-        .length
+      this.datasets.filter(
+        (x, i) => x.data.length !== this.old.datasetsDataLengths[i]
+      ).length
     ) {
       this.old.datasetsDataLengths = this.datasets.map((x) => x.data.length);
 
@@ -181,8 +194,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     // This smells of inefficiency, might need to revisit this
     if (
       this.colors &&
-      this.colors
-        .filter((x, i) => !this.colorsEqual(x, this.old.colors[i]))
+      this.colors.filter((x, i) => !this.colorsEqual(x, this.old.colors[i]))
         .length
     ) {
       this.old.colors = this.colors.map((x) => this.copyColor(x));
@@ -200,8 +212,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
     if (
       this.labels &&
-      this.labels
-        .filter((x, i) => !this.labelsEqual(x, this.old.labels[i]))
+      this.labels.filter((x, i) => !this.labelsEqual(x, this.old.labels[i]))
         .length
     ) {
       this.old.labels = this.labels.map((x) => this.copyLabel(x));
@@ -215,7 +226,10 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       wantUpdate(UpdateType.Refresh);
     }
 
-    if (this.options.legend && this.options.legend.position !== this.old.legend.position) {
+    if (
+      this.options.legend &&
+      this.options.legend.position !== this.old.legend.position
+    ) {
       this.old.legend.position = this.options.legend.position;
 
       wantUpdate(UpdateType.Refresh);
@@ -241,11 +255,13 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
   }
 
   labelsEqual(a: Label, b: Label) {
-    return true
-      && Array.isArray(a) === Array.isArray(b)
-      && (Array.isArray(a) || a === b)
-      && (!Array.isArray(a) || a.length === b.length)
-      && (!Array.isArray(a) || a.filter((x, i) => x !== b[i]).length === 0);
+    return (
+      true &&
+      Array.isArray(a) === Array.isArray(b) &&
+      (Array.isArray(a) || a === b) &&
+      (!Array.isArray(a) || a.length === b.length) &&
+      (!Array.isArray(a) || a.filter((x, i) => x !== b[i]).length === 0)
+    );
   }
 
   copyColor(a: Color): Color {
@@ -279,27 +295,30 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     if (!a !== !b) {
       return false;
     }
-    return !a || true
-      && (a.backgroundColor === b.backgroundColor)
-      && (a.borderWidth === b.borderWidth)
-      && (a.borderColor === b.borderColor)
-      && (a.borderCapStyle === b.borderCapStyle)
-      && (a.borderDash === b.borderDash)
-      && (a.borderDashOffset === b.borderDashOffset)
-      && (a.borderJoinStyle === b.borderJoinStyle)
-      && (a.pointBorderColor === b.pointBorderColor)
-      && (a.pointBackgroundColor === b.pointBackgroundColor)
-      && (a.pointBorderWidth === b.pointBorderWidth)
-      && (a.pointRadius === b.pointRadius)
-      && (a.pointHoverRadius === b.pointHoverRadius)
-      && (a.pointHitRadius === b.pointHitRadius)
-      && (a.pointHoverBackgroundColor === b.pointHoverBackgroundColor)
-      && (a.pointHoverBorderColor === b.pointHoverBorderColor)
-      && (a.pointHoverBorderWidth === b.pointHoverBorderWidth)
-      && (a.pointStyle === b.pointStyle)
-      && (a.hoverBackgroundColor === b.hoverBackgroundColor)
-      && (a.hoverBorderColor === b.hoverBorderColor)
-      && (a.hoverBorderWidth === b.hoverBorderWidth);
+    return (
+      !a ||
+      (true &&
+        a.backgroundColor === b.backgroundColor &&
+        a.borderWidth === b.borderWidth &&
+        a.borderColor === b.borderColor &&
+        a.borderCapStyle === b.borderCapStyle &&
+        a.borderDash === b.borderDash &&
+        a.borderDashOffset === b.borderDashOffset &&
+        a.borderJoinStyle === b.borderJoinStyle &&
+        a.pointBorderColor === b.pointBorderColor &&
+        a.pointBackgroundColor === b.pointBackgroundColor &&
+        a.pointBorderWidth === b.pointBorderWidth &&
+        a.pointRadius === b.pointRadius &&
+        a.pointHoverRadius === b.pointHoverRadius &&
+        a.pointHitRadius === b.pointHitRadius &&
+        a.pointHoverBackgroundColor === b.pointHoverBackgroundColor &&
+        a.pointHoverBorderColor === b.pointHoverBorderColor &&
+        a.pointHoverBorderWidth === b.pointHoverBorderWidth &&
+        a.pointStyle === b.pointStyle &&
+        a.hoverBackgroundColor === b.hoverBackgroundColor &&
+        a.hoverBorderColor === b.hoverBorderColor &&
+        a.hoverBorderWidth === b.hoverBorderWidth)
+    );
   }
 
   updateColors() {
@@ -307,7 +326,9 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       if (this.colors && this.colors[index]) {
         Object.assign(elm, this.colors[index]);
       } else {
-        Object.assign(elm, getColors(this.chartType, index, elm.data.length), { ...elm });
+        Object.assign(elm, getColors(this.chartType, index, elm.data.length), {
+          ...elm,
+        });
       }
     });
   }
@@ -376,6 +397,7 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
     if (this.chart) {
       return this.chart.update(duration);
     }
+    return null;
   }
 
   public hideDataset(index: number, hidden: boolean) {
@@ -415,7 +437,10 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       };
     }
 
-    const mergedOptions = this.smartMerge(options, this.themeService.getColorschemesOptions());
+    const mergedOptions = this.smartMerge(
+      options,
+      this.themeService.getColorschemesOptions()
+    );
 
     const chartConfig: chartJs.ChartConfiguration = {
       type: this.chartType,
@@ -522,7 +547,9 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
 
   private getDatasets() {
     if (!this.datasets && !this.data) {
-      throw new Error(`ng-charts configuration error, data or datasets field are required to render chart ${this.chartType}`);
+      throw new Error(
+        `ng-charts configuration error, data or datasets field are required to render chart ${this.chartType}`
+      );
     }
 
     // If `datasets` is defined, use it over the `data` property.
@@ -535,6 +562,8 @@ export class BaseChartDirective implements OnDestroy, OnChanges, OnInit, OnDestr
       this.propagateDataToDatasets(this.data);
       return this.datasets;
     }
+
+    return null;
   }
 
   private refresh() {
