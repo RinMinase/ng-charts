@@ -34,8 +34,8 @@
     "release": "release-it --ci --no-increment --verbose || true"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.0 || ^8.0.0 || ^9.0.0",
-    "@angular/core": "^7.2.0 || ^8.0.0 || ^9.0.0",
+    "@angular/common": "^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/core": "^7.2.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
     "rxjs": "^6.5.4"
   },
   "dependencies": {
