@@ -38,7 +38,7 @@
     "@angular/compiler-cli": "^10.0.2",
     "@angular/forms": "^10.0.2",
     "@angular/platform-browser": "^10.0.2",
-    "netlify-cli": "^2.54.0",
+    "netlify-cli": "^2.57.0",
     "tslib": "^2.0.0",
     "typescript": "^3.9.5"
   },
