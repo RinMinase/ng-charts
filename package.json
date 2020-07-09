@@ -44,12 +44,12 @@
     "lodash-es": "^4.17.15"
   },
   "devDependencies": {
-    "@angular/compiler": "^10.0.2",
-    "@angular/compiler-cli": "^10.0.2",
-    "@angular/core": "^10.0.2",
+    "@angular/compiler": "^10.0.3",
+    "@angular/compiler-cli": "^10.0.3",
+    "@angular/core": "^10.0.3",
     "@types/lodash-es": "^4.17.3",
     "bestzip": "^2.1.5",
-    "ng-packagr": "^10.0.0",
+    "ng-packagr": "^10.0.1",
     "release-it": "^13.6.4",
     "rxjs": "^6.6.0",
     "ts-node": "^8.10.2",

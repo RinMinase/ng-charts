@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@angular/compiler-cli@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-10.0.2.tgz#8f178a03989e0018890c52807df9e3e03faaf47a"
-  integrity sha512-LGX86k1hOyaw5aPCjFfoLuPhVLKMENOdCBeNBzZB+H2CUGHfv8OWFB1EzjZO1N07VGR7JoMx9ZWSP7ornhuS4Q==
+"@angular/compiler-cli@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-10.0.3.tgz#40337e1badb5a2675525fdb3b6ccc828c15ee8d4"
+  integrity sha512-XK2xQX0RLr7QMkEseDhcdqZ2hMM5n1Q6LFvOJfxQXXBpa7DBC9mB6HLsn0vrLgwaAfz+SEQ7pLDgXQSy2tmJUg==
   dependencies:
     canonical-path "1.0.0"
     chokidar "^3.0.0"
@@ -21,17 +21,17 @@
     tslib "^2.0.0"
     yargs "15.3.0"
 
-"@angular/compiler@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-10.0.2.tgz#1056af84ad76763f03228aa3a60b63a5cd775944"
-  integrity sha512-TNE5ESDlRCVneb/K62HOEgLpxuZZTlw8RcmOy5vt3SngEVc576OE/aYsEA6MCwTlqj16GLSS3jGm9HBJcBKUVw==
+"@angular/compiler@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-10.0.3.tgz#3bfb16d42e04b41effd31729e1798fc1c83335e0"
+  integrity sha512-SmzMYxBprs8bVS9WctiCDj6KVp3jZFEaxGTbC/FwtdvesMIdOktpHggUeJW+OzUTwTnYVmKrm6d8rdg3QSaXFQ==
   dependencies:
     tslib "^2.0.0"
 
-"@angular/core@^10.0.2":
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-10.0.2.tgz#d2d2c2dd4a9e80dcccc63c274f13ab7397ee5a3b"
-  integrity sha512-r4M1D2NOdkmmFyvYLHRYSIBKTGNXQarZHDZcm5oEq2eTsRVe2u9MYIeOpHKeVQCQK7XKQVB13IZQP3XpUvljFg==
+"@angular/core@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-10.0.3.tgz#2cfef68c2ac088f9e1bf72cb4601391cff4f9c92"
+  integrity sha512-EfWAz5StlPYo2ZtvVzeoNlGrFAXRncwGd/CExbLFOZx4HcDXVkATw5d4vnKHmmKacDqnbuvMD2M0Tl0EJi5q4g==
   dependencies:
     tslib "^2.0.0"
 
@@ -2496,10 +2496,10 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-ng-packagr@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-10.0.0.tgz#e6fd0d2e144cf92de92ba4d7d37b9da0bdb131f1"
-  integrity sha512-g+xrHgaF1P8URFb2JZZ4TpTD1uSN1JCHyiP3+PVUp/J8q69QRw9A8dl3JiosgbklUcVif2OnoHTpxNtLcVQ7gw==
+ng-packagr@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-10.0.1.tgz#077b38121a7b7cd26e37127e8c4160eeaa7528f4"
+  integrity sha512-jTG79Dg/FuSuDIcCzbd/MOyJDrb+DUBXNT2NZbHxQ7y5Tm0tlqJs/9ffr0q0879A8TYuV8GH3+4uP3Oup6LBFw==
   dependencies:
     "@rollup/plugin-commonjs" "^13.0.0"
     "@rollup/plugin-json" "^4.0.0"
