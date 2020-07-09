@@ -40,7 +40,7 @@
     "@angular/platform-browser": "^10.0.3",
     "netlify-cli": "^2.57.0",
     "tslib": "^2.0.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.6"
   },
   "resolutions": {
     "**/highlight.js": "^9.18.1"
