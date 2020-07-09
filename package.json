@@ -50,7 +50,7 @@
     "@types/lodash-es": "^4.17.3",
     "bestzip": "^2.1.5",
     "ng-packagr": "^10.0.1",
-    "release-it": "^13.6.4",
+    "release-it": "^13.6.5",
     "rxjs": "^6.6.0",
     "ts-node": "^8.10.2",
     "tslib": "^2.0.0",
