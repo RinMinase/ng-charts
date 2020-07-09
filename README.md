@@ -69,8 +69,18 @@ There are one directive for all chart types: `baseChart`, and there are 8 types 
 - `labels` (`Label[]`) - x axis labels. It's necessary for charts: `line`, `bar` and `radar`. And just labels (on hover) for charts: `polarArea`, `pie` and `doughnut`. `Label` is either a single `string`, or it may be a `string[]` representing a multi-line label where each array element is on a new line.
 - `chartType` (`ChartType`) - indicates the type of charts, it can be: `line`, `bar`, `radar`, `pie`, `polarArea`, `doughnut`
 - `options` (`ChartOptions`) - chart options (as from [Chart.js documentation](http://www.chartjs.org/docs/))
-- `colors` (`Color[]`) - data colors, will use default and|or random colors if not specified (see below)
+- `colors` (`Color | DatasetColor[]`) - data colors **per dataset** will use default and|or random colors if not specified (see below)
 - `legend`: (`boolean = false`) - if true show legend below the chart, otherwise not be shown
+
+**Note** Pie charts only contain one dataset unlike other charts, as such `colors` are formatted as such:
+
+```typescript
+data = [10, 20, 30];
+colors = [{
+    backgroundColor: ["red", "#0F0", "rgba(41, 182, 246,0.75)"],
+    borderColor: ["rgb(250,120,100)", "green", "#0086c3"],
+}];
+```
 
 ### Events
 
