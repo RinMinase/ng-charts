@@ -12,7 +12,7 @@ import {
 } from "@angular/core";
 import * as chartJs from "chart.js";
 import { getColors } from "./get-colors";
-import { Color } from "./color";
+import { DatasetColor } from "./color";
 import { ThemeService } from "./theme.service";
 import { Subscription } from "rxjs";
 import { cloneDeep } from "lodash-es";
@@ -26,6 +26,7 @@ export type PluginServiceGlobalRegistrationAndOptions = chartJs.PluginServiceGlo
 export type SingleLineLabel = string;
 export type MultiLineLabel = string[];
 export type Label = SingleLineLabel | MultiLineLabel;
+export type Color = DatasetColor[];
 
 interface OldState {
   dataExists: boolean;
@@ -35,7 +36,7 @@ interface OldState {
   datasetsDataObjects: any[];
   datasetsDataLengths: number[];
   colorsExists: boolean;
-  colors: Color[];
+  colors: DatasetColor[];
   labelsExist: boolean;
   labels: Label[];
   legendExists: boolean;
@@ -62,7 +63,7 @@ export class BaseChartDirective
   @Input() public labels: Label[];
   @Input() public options: chartJs.ChartOptions = {};
   @Input() public chartType: chartJs.ChartType;
-  @Input() public colors: Color[];
+  @Input() public colors: DatasetColor[];
   @Input() public legend: boolean;
   @Input() public plugins: PluginServiceGlobalRegistrationAndOptions[];
 
@@ -264,8 +265,8 @@ export class BaseChartDirective
     );
   }
 
-  copyColor(a: Color): Color {
-    const rc: Color = {
+  copyColor(a: DatasetColor): DatasetColor {
+    const rc: DatasetColor = {
       backgroundColor: a.backgroundColor,
       borderWidth: a.borderWidth,
       borderColor: a.borderColor,
@@ -291,7 +292,7 @@ export class BaseChartDirective
     return rc;
   }
 
-  colorsEqual(a: Color, b: Color) {
+  colorsEqual(a: DatasetColor, b: DatasetColor) {
     if (!a !== !b) {
       return false;
     }

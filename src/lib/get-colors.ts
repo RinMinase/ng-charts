@@ -1,4 +1,4 @@
-import { Color } from "./color";
+import { DatasetColor } from "./color";
 import { Colors } from "./colors";
 import { defaultColors } from "./default-colors";
 
@@ -9,7 +9,7 @@ export function getColors(
   chartType: string,
   index: number,
   count: number
-): Color {
+): DatasetColor {
   if (chartType === "pie" || chartType === "doughnut") {
     return formatPieColors(generateColors(count));
   }
@@ -45,7 +45,7 @@ function getRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function formatLineColor(colors: Array<number>): Color {
+function formatLineColor(colors: Array<number>): DatasetColor {
   return {
     backgroundColor: rgba(colors, 0.4),
     borderColor: rgba(colors, 1),
@@ -56,7 +56,7 @@ function formatLineColor(colors: Array<number>): Color {
   };
 }
 
-function formatBarColor(colors: Array<number>): Color {
+function formatBarColor(colors: Array<number>): DatasetColor {
   return {
     backgroundColor: rgba(colors, 0.6),
     borderColor: rgba(colors, 1),
@@ -76,7 +76,7 @@ function formatPieColors(colors: Array<number[]>): Colors {
   };
 }
 
-function formatPolarAreaColors(colors: Array<number[]>): Color {
+function formatPolarAreaColors(colors: Array<number[]>): DatasetColor {
   return {
     backgroundColor: colors.map((color: number[]) => rgba(color, 0.6)),
     borderColor: colors.map((color: number[]) => rgba(color, 1)),

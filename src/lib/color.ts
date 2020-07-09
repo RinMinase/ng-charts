@@ -1,6 +1,6 @@
 import { ChartColor } from "chart.js";
 
-export interface Color {
+export interface DatasetColor {
   backgroundColor?: ChartColor;
   borderWidth?: number | number[];
   borderColor?: ChartColor;
