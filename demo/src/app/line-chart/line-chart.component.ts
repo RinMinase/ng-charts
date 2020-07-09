@@ -67,7 +67,7 @@ export class LineChartComponent {
             ],
         },
     };
-    chartColors: Color[] = [
+    chartColors: Color = [
         {
             // green
             backgroundColor: "rgba(76, 175, 80, 0.2)",
