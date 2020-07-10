@@ -25,8 +25,13 @@ export type PluginServiceGlobalRegistrationAndOptions = chartJs.PluginServiceGlo
   chartJs.PluginServiceRegistrationOptions;
 export type SingleLineLabel = string;
 export type MultiLineLabel = string[];
-export type Label = SingleLineLabel | MultiLineLabel;
-export type Color = DatasetColor[];
+
+export type ChartLabel = SingleLineLabel | MultiLineLabel;
+export type ChartColor = DatasetColor[];
+export type ChartType = chartJs.ChartType;
+export type ChartDataset = chartJs.ChartDataSets;
+export type ChartDatasets = chartJs.ChartDataSets[];
+export type ChartOptions = chartJs.ChartOptions;
 
 interface OldState {
   dataExists: boolean;
@@ -38,7 +43,7 @@ interface OldState {
   colorsExists: boolean;
   colors: DatasetColor[];
   labelsExist: boolean;
-  labels: Label[];
+  labels: ChartLabel[];
   legendExists: boolean;
   legend: {
     position?: string;
@@ -59,10 +64,10 @@ enum UpdateType {
 export class BaseChartDirective
   implements OnDestroy, OnChanges, OnInit, OnDestroy, DoCheck {
   @Input() public data: SingleOrMultiDataSet;
-  @Input() public datasets: chartJs.ChartDataSets[];
-  @Input() public labels: Label[];
-  @Input() public options: chartJs.ChartOptions = {};
-  @Input() public chartType: chartJs.ChartType;
+  @Input() public datasets: ChartDatasets;
+  @Input() public labels: ChartLabel[];
+  @Input() public options: ChartOptions = {};
+  @Input() public chartType: ChartType;
   @Input() public colors: DatasetColor[];
   @Input() public legend: boolean;
   @Input() public plugins: PluginServiceGlobalRegistrationAndOptions[];
@@ -248,14 +253,14 @@ export class BaseChartDirective
     }
   }
 
-  copyLabel(a: Label): Label {
+  copyLabel(a: ChartLabel): ChartLabel {
     if (Array.isArray(a)) {
       return [...a];
     }
     return a;
   }
 
-  labelsEqual(a: Label, b: Label) {
+  labelsEqual(a: ChartLabel, b: ChartLabel) {
     return (
       true &&
       Array.isArray(a) === Array.isArray(b) &&
@@ -488,11 +493,11 @@ export class BaseChartDirective
     }
   }
 
-  private isMultiLineLabel(label: Label): label is MultiLineLabel {
+  private isMultiLineLabel(label: ChartLabel): label is MultiLineLabel {
     return Array.isArray(label);
   }
 
-  private joinLabel(label: Label): string {
+  private joinLabel(label: ChartLabel): string {
     if (!label) {
       return null;
     }
