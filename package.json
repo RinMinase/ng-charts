@@ -31,7 +31,9 @@
     "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
     "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-charts-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
-    "release": "release-it --ci --no-increment --verbose || true"
+    "release": "release-it --ci --no-increment --verbose || true",
+    "logs": "auto-changelog -p --template keepachangelog --unreleased-only",
+    "postversion": "npm run logs"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
@@ -79,8 +81,7 @@
       "commit": false,
       "tag": false,
       "push": false,
-      "requireCleanWorkingDir": false,
-      "changelog": "auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/changelog-compact.hbs"
+      "requireCleanWorkingDir": false
     },
     "github": {
       "release": true,
@@ -93,9 +94,6 @@
       "publishConfig": {
         "access": "public"
       }
-    },
-    "hooks": {
-      "after:bump": "auto-changelog -p"
     }
   }
 }
