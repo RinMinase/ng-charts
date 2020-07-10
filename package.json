@@ -3,7 +3,7 @@
   "name": "@rinminase/ng-charts",
   "description": "Reactive, responsive, beautiful charts for Angular based on ng2-charts",
   "homepage": "https://ng-charts.netlify.app",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "license": "MIT",
   "author": "Rin Minase",
   "main": "src/public_api.ts",
@@ -33,7 +33,7 @@
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-charts-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
     "release": "release-it --ci --no-increment --verbose || true",
     "logs": "auto-changelog -p --template keepachangelog --unreleased-only",
-    "postversion": "npm run logs"
+    "postversion": "git commit -am \"Bumped library version\" && npm run logs"
   },
   "peerDependencies": {
     "@angular/common": "^8.0.0 || ^9.0.0 || ^10.0.0",
