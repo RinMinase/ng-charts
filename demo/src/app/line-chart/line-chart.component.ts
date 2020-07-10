@@ -1,6 +1,10 @@
 import { Component } from "@angular/core";
-import { ChartOptions } from "chart.js";
-import { Color, Label } from "@rinminase/ng-charts";
+import {
+    ChartColor,
+    ChartDatasets,
+    ChartLabel,
+    ChartOptions,
+} from "@rinminase/ng-charts";
 import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
@@ -10,7 +14,7 @@ import { AppService } from "@app/app.service";
     templateUrl: "./line-chart.component.html",
 })
 export class LineChartComponent {
-    chartData = [
+    chartData: ChartDatasets = [
         { data: [65, 59, 80, 81, 56, 55, 40], label: "Series A" },
         { data: [28, 48, 40, 19, 86, 27, 90], label: "Series B" },
         {
@@ -19,7 +23,7 @@ export class LineChartComponent {
             yAxisID: "y-axis-1",
         },
     ];
-    chartLabels: Label[] = [
+    chartLabels: ChartLabel[] = [
         "January",
         "February",
         "March",
@@ -67,7 +71,7 @@ export class LineChartComponent {
             ],
         },
     };
-    chartColors: Color = [
+    chartColors: ChartColor = [
         {
             // green
             backgroundColor: "rgba(76, 175, 80, 0.2)",

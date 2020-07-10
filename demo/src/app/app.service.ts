@@ -5,7 +5,9 @@ import { ChartPoint } from "chart.js";
 export class AppService {
     constructor() {}
 
-    public randomize(values: Array<number> | Array<ChartPoint>): Array<number> {
+    public randomize(
+        values: Array<number | null | undefined | number[]> | ChartPoint[],
+    ): Array<number> {
         const returnValue = [];
         values.forEach(() => {
             returnValue.push(Math.round(Math.random() * 100));
