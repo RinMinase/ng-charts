@@ -62,7 +62,7 @@
   "auto-changelog": {
     "template": "keepachangelog",
     "package": true,
-    "unreleasedOnly": false,
+    "unreleasedOnly": true,
     "commitLimit": 15,
     "backfillLimit": 15
   },
