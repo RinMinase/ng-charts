@@ -50,7 +50,7 @@
     "@angular/core": "^10.0.5",
     "@types/lodash-es": "^4.17.3",
     "auto-changelog": "^2.2.0",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.6",
     "ng-packagr": "^10.0.3",
     "release-it": "^13.6.5",
     "rxjs": "^6.6.0",
