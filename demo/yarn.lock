@@ -7900,14 +7900,14 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-ngx-highlightjs@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.0.2.tgz#d0b2578894093cdff8006111037d5fd953cb893b"
-  integrity sha512-qCQXMDFpbDv5u51rLfoc2G3mMq+l6uatFI+BZT0JkTYTvjdqOFkGWLzQ1hA5UPzyFc3dCpT+OLeVdtq6oX99dg==
+ngx-highlightjs@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.1.1.tgz#cf0279b4d5ecb5261cd69016f812c71e2afa076a"
+  integrity sha512-EJstk6IkPohhOJ5Dvq/Igcb1GhjucuT2XJOiQEfHx1MW8xZ2+tGppq+J5Wxyb7VQ5IsuzGRxPCXsQ/OCdQ4+fA==
   dependencies:
     highlight.js "*"
     highlightjs-line-numbers.js "*"
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
 nice-try@^1.0.4:
   version "1.0.5"
