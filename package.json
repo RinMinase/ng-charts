@@ -51,7 +51,7 @@
     "@types/lodash-es": "^4.17.3",
     "auto-changelog": "^2.2.0",
     "bestzip": "^2.1.7",
-    "ng-packagr": "^10.0.3",
+    "ng-packagr": "^10.1.0",
     "release-it": "^14.0.2",
     "rxjs": "^6.6.3",
     "ts-node": "^8.10.2",
