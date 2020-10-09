@@ -8346,10 +8346,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-ngx-highlightjs@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.1.1.tgz#cf0279b4d5ecb5261cd69016f812c71e2afa076a"
-  integrity sha512-EJstk6IkPohhOJ5Dvq/Igcb1GhjucuT2XJOiQEfHx1MW8xZ2+tGppq+J5Wxyb7VQ5IsuzGRxPCXsQ/OCdQ4+fA==
+ngx-highlightjs@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/ngx-highlightjs/-/ngx-highlightjs-4.1.2.tgz#351dfccb9ad07adc725d5cd445d85853bed1165c"
+  integrity sha512-+oJKGSaN56x0U92/IlvVgn7Zbnj7MRNfgqGCkCUBMLMxnw1grLmgySZS8eauxfruGVGKk6eVmQwDdY1/FkrIPA==
   dependencies:
     highlight.js "*"
     highlightjs-line-numbers.js "*"
