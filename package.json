@@ -42,13 +42,13 @@
   "dependencies": {
     "@types/chart.js": "2.9.22",
     "chart.js": "^2.9.3",
-    "lodash-es": "^4.17.15"
+    "lodash-es": "^4.17.20"
   },
   "devDependencies": {
     "@angular/compiler": "^11.1.0",
     "@angular/compiler-cli": "^11.1.0",
     "@angular/core": "^11.1.0",
-    "@types/lodash-es": "^4.17.3",
+    "@types/lodash-es": "^4.17.4",
     "auto-changelog": "^2.2.1",
     "bestzip": "^2.1.7",
     "ng-packagr": "^11.1.2",
