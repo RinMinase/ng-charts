@@ -52,7 +52,7 @@
     "auto-changelog": "^2.2.1",
     "bestzip": "^2.1.7",
     "ng-packagr": "^11.1.2",
-    "release-it": "^14.0.4",
+    "release-it": "^14.2.2",
     "rxjs": "^6.6.3",
     "ts-node": "^9.1.1",
     "tslib": "^2.1.0",
