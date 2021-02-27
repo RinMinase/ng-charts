@@ -90,8 +90,7 @@
       "requireCleanWorkingDir": false
     },
     "github": {
-      "draft": true,
-      "release": true,
+      "release": false,
       "releaseName": "${version}",
       "assets": "ng-charts-*-dist.zip"
     },
