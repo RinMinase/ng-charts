@@ -32,7 +32,8 @@
     "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-charts-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
     "release": "release-it --ci --no-increment --verbose || true",
-    "logs": "auto-changelog"
+    "logs": "auto-changelog && npm run logs:post",
+    "logs:post": "sed -i \"/auto-changelog-above/,+1 d;10i <!-- auto-changelog-above -->\\n\" CHANGELOG.md"
   },
   "peerDependencies": {
     "@angular/common": ">=8.0.0",
