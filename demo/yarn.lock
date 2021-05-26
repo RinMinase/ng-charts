@@ -2570,15 +2570,15 @@
   dependencies:
     "@octokit/openapi-types" "^7.2.0"
 
-"@rinminase/ng-charts@3.2.1":
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-3.2.1.tgz#14b4b87972efe12a036649e66fe738c016c2a57b"
-  integrity sha512-qW9dmBIo2ygpOTaNNpsj5dOvOS8EEA8uxZrbTZ/VKcWELxBaAS2DvtQWtdsfQZbjABNjm/9lNVX2/B4I8F5I3w==
+"@rinminase/ng-charts@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@rinminase/ng-charts/-/ng-charts-4.0.0.tgz#b580e6aa0a0c0c80d29976807021b87d495b98bf"
+  integrity sha512-eHa34xlMTj8DBisZ9QkDVxCBeNudR4xmXQFzPh5t4bHrQlV2q6qg62R17qSwYmWZf27FEd4ZVEXGrSZytuvgew==
   dependencies:
     "@types/chart.js" "2.9.22"
     chart.js "^2.9.3"
-    lodash-es "^4.17.15"
-    tslib "^2.0.0"
+    lodash-es "^4.17.21"
+    tslib "^2.1.0"
 
 "@rollup/plugin-babel@^5.2.0":
   version "5.2.1"
@@ -8351,10 +8351,10 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash-es@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
-  integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
+lodash-es@^4.17.21:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
