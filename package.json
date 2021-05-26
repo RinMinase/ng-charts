@@ -46,18 +46,18 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@angular/compiler": "^11.2.3",
-    "@angular/compiler-cli": "^11.2.3",
-    "@angular/core": "^11.2.3",
+    "@angular/compiler": "^12.0.1",
+    "@angular/compiler-cli": "^12.0.1",
+    "@angular/core": "^12.0.1",
     "@types/lodash-es": "^4.17.4",
     "auto-changelog": "^2.3.0",
     "bestzip": "^2.2.0",
-    "ng-packagr": "^11.2.4",
+    "ng-packagr": "^12.0.2",
     "release-it": "^14.7.0",
-    "rxjs": "^6.6.6",
-    "ts-node": "^9.1.1",
-    "tslib": "^2.1.0",
-    "typescript": "~4.1.5",
+    "rxjs": "^7.1.0",
+    "ts-node": "^10.0.0",
+    "tslib": "^2.2.0",
+    "typescript": "~4.2.4",
     "zone.js": "^0.11.4"
   },
   "auto-changelog": {
