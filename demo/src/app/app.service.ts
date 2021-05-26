@@ -11,16 +11,16 @@ export class AppService {
     ): Array<number> {
         const returnValue = [];
 
-        if (!specialChart) {
-            values.forEach(() => {
-                returnValue.push(Math.round(Math.random() * 100));
-            });
-        } else if (specialChart === "bubble") {
+        const randomizer = (max: number = 100) => {
+            return Math.round(Math.random() * max);
+        };
+
+        if (specialChart === "bubble") {
             values.forEach(() => {
                 returnValue.push({
-                    x: Math.round(Math.random() * 30),
-                    y: Math.round(Math.random() * 30),
-                    r: Math.round(Math.random() * 50),
+                    x: randomizer(30),
+                    y: randomizer(30),
+                    r: randomizer(50),
                 });
             });
         } else if (specialChart === "scatter") {
@@ -28,9 +28,13 @@ export class AppService {
 
             values.forEach(() => {
                 returnValue.push({
-                    x: Math.round(Math.random() * 10 * rndPosNeg()),
-                    y: Math.round(Math.random() * 10 * rndPosNeg()),
+                    x: randomizer(10) * rndPosNeg(),
+                    y: randomizer(10) * rndPosNeg(),
                 });
+            });
+        } else {
+            values.forEach(() => {
+                returnValue.push(randomizer());
             });
         }
 
