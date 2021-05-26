@@ -37,7 +37,7 @@ export class DynamicChartComponent {
 
     constructor() {}
 
-    public randomizer(): void {
+    public toggleChartType(): void {
         this.dynChartType = this.dynChartType === "bar" ? "line" : "bar";
     }
 }
