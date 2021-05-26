@@ -1,3 +1,15 @@
 <p>
-    bubble-chart works!
+    <canvas baseChart
+        chartType="bubble"
+        [datasets]="chartData"
+        [options]="chartOptions"
+        [legend]="chartLegend">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
