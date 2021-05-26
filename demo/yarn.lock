@@ -8165,10 +8165,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-material-icons@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/material-icons/-/material-icons-0.3.1.tgz#425e06e2448632d6249d6e1ffe2993682c5b171e"
-  integrity sha512-5Hbj76A6xDPcDZEbM4oxTknhWuMwGWnAHVLLPCEq9eVlcHb0fn4koU9ZeyMy1wjARtDEPAHfd5ZdL2Re5hf0zQ==
+material-icons@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/material-icons/-/material-icons-0.6.4.tgz#d0a120651c75058fe328c7ea9abb5b5be7e1b194"
+  integrity sha512-pAx0WSSGx4l6h8aMap+09TFMNMZUwGYlN0iWtK2vvHDJUe5B0MPmRyqwj42ov/x+kEqXuDKHT+2RUFfNZB3aUg==
 
 maxstache-stream@^1.0.0:
   version "1.0.4"
