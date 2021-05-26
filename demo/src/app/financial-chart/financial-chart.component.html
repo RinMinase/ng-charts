@@ -1,3 +1,18 @@
 <p>
-    financial-chart works!
+    <canvas
+        baseChart
+        [datasets]="finChartData"
+        [options]="finChartOptions"
+        [colors]="finChartColors"
+        [legend]="finChartLegend"
+        [chartType]="finChartType"
+        [plugins]="finChartPlugins">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="toggleChartType()">
+        Toggle Chart Type
+    </button>
 </p>
