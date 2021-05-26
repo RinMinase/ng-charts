@@ -1,3 +1,17 @@
 <p>
-    pie-chart works!
+    <canvas baseChart
+        chartType="pie"
+        [data]="chartData"
+        [colors]="chartColors"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [plugins]="chartPlugins"
+        [legend]="chartLegend">
+    </canvas>
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
