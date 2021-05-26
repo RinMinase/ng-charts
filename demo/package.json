@@ -11,7 +11,7 @@
     "url": "git+https://github.com/RinMinase/ng-charts.git"
   },
   "scripts": {
-    "start": "ng serve",
+    "start": "ng serve --configuration development",
     "build": "ng build --prod && npm run redirects",
     "deploy": "ng build --prod --no-progress && npm run redirects",
     "redirects": "echo /* /index.html 200> ./dist/_redirects",
