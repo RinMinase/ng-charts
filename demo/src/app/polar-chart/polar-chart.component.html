@@ -1,3 +1,15 @@
 <p>
-    polar-chart works!
+    <canvas baseChart
+        chartType="polarArea"
+        [data]="chartData"
+        [labels]="chartLabels"
+        [legend]="chartLegend">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
