@@ -1,3 +1,17 @@
 <p>
-    dynamic-chart works!
+    <canvas
+        baseChart
+        [datasets]="dynChartData"
+        [labels]="dynChartLabels"
+        [options]="dynChartOptions"
+        [legend]="dynChartLegend"
+        [chartType]="dynChartType">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
