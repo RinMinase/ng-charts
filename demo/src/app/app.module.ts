@@ -63,6 +63,7 @@ import { ScatterChartComponent } from "./scatter-chart/scatter-chart.component";
         {
             provide: HIGHLIGHT_OPTIONS,
             useValue: {
+                coreLibraryLoader: () => import("highlight.js/lib/core"),
                 languages: getLanguages(),
             },
         },
