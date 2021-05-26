@@ -170,8 +170,8 @@ Thanks for understanding!
 - Yes. This is alongside with its other peer dependencies (angular and zonejs)
 
 ## Built with
-* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 9](https://angular.io/) - Library setup
-* <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon.ico"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 12](https://angular.io/) - Library setup
+* <img width=20 height=20 src="https://www.typescriptlang.org/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
 * <img width=20 height=20 src="https://gblobscdn.gitbook.com/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
