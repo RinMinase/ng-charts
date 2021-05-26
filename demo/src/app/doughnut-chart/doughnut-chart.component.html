@@ -2,5 +2,14 @@
     <canvas baseChart width="600" height="200"
         chartType="doughnut"
         [data]="chartData"
-        [labels]="chartLabels"></canvas>
+        [labels]="chartLabels">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        disabled
+        color="primary"
+        (click)="randomizer()">
+        Randomize (WIP)
+    </button>
 </div>
