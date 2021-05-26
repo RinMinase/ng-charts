@@ -34,6 +34,16 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
   npm install @rinminase/ng-charts
   ```
 
+### Using a CDN
+
+1. You can use [JSDelivr](https://www.jsdelivr.com/) CDN and place it on your main HTML page
+```html
+  <body>
+    ...
+    <script src=https://cdn.jsdelivr.net/npm/@rinminase/ng-charts></script>
+  </body>
+```
+
 ### Stackblitz Starting Templates
 
 * [Line Chart](https://stackblitz.com/edit/ng-charts-line)
