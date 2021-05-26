@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -7,6 +8,7 @@ import { AppService } from "@app/app.service";
     templateUrl: "./radar-chart.component.html",
 })
 export class RadarChartComponent {
+    chartPlugins = [chartlabels];
     chartOptions = {
         responsive: true,
     };

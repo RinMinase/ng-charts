@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ChartDatasets, ChartLabel, ChartOptions } from "@rinminase/ng-charts";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -30,7 +31,7 @@ export class BarChartComponent {
     ];
 
     chartLegend = true;
-    chartPlugins = [];
+    chartPlugins = [chartlabels];
 
     chartData: ChartDatasets = [
         { data: [65, 59, 80, 81, 56, 55, 40], label: "Series A" },

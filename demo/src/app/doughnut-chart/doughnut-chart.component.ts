@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 // import { AppService } from "@app/app.service";
 
@@ -7,6 +8,7 @@ import { Component } from "@angular/core";
     templateUrl: "./doughnut-chart.component.html",
 })
 export class DoughnutChartComponent {
+    chartPlugins = [chartlabels];
     chartLabels = ["Download Sales", "In-Store Sales", "Mail-Order Sales"];
     chartData = [
         [350, 450, 100],

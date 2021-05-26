@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -17,8 +18,6 @@ export class PieChartComponent {
         "Mail Sales",
     ];
 
-    chartData = [300, 500, 100];
-
     chartColors = [
         {
             backgroundColor: ["red", "#0F0", "rgba(41, 182, 246,0.75)"],
@@ -26,8 +25,9 @@ export class PieChartComponent {
         },
     ];
 
+    chartData = [300, 500, 100];
     chartLegend = true;
-    chartPlugins = [];
+    chartPlugins = [chartlabels];
 
     constructor(private service: AppService) {}
 

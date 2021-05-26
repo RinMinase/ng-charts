@@ -84,6 +84,7 @@ export class FinancialChartComponent {
         return data;
     }
 
+    // Disregard this function, as this just toggles the chart type
     toggleChartType(): void {
         this.finChartType =
             this.finChartType === "candlestick" ? "ohlc" : "candlestick";

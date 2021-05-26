@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -17,6 +18,7 @@ export class PolarChartComponent {
 
     chartData = [300, 500, 100, 40, 120];
     chartLegend = true;
+    chartPlugins = [chartlabels];
 
     constructor(private service: AppService) {}
 

@@ -1,11 +1,12 @@
 <p>
     <canvas
         baseChart
-        [datasets]="dynChartData"
-        [labels]="dynChartLabels"
-        [options]="dynChartOptions"
-        [legend]="dynChartLegend"
-        [chartType]="dynChartType">
+        [datasets]="chartData"
+        [labels]="chartLabels"
+        [options]="chartOptions"
+        [legend]="chartLegend"
+        [chartType]="chartType"
+        [plugins]="chartPlugins">
     </canvas>
 
     <button mat-button

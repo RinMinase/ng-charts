@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ChartDatasets, ChartOptions } from "@rinminase/ng-charts";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -8,6 +9,7 @@ import { AppService } from "@app/app.service";
     templateUrl: "./scatter-chart.component.html",
 })
 export class ScatterChartComponent {
+    chartPlugins = [chartlabels];
     chartOptions: ChartOptions = {
         responsive: true,
     };

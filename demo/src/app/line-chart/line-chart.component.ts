@@ -23,6 +23,7 @@ export class LineChartComponent {
             yAxisID: "y-axis-1",
         },
     ];
+
     chartLabels: ChartLabel[] = [
         "January",
         "February",
@@ -32,8 +33,10 @@ export class LineChartComponent {
         "June",
         "July",
     ];
+
     chartOptions: ChartOptions & { annotation: any } = {
-        responsive: false,
+        responsive: true,
+        maintainAspectRatio: false,
         scales: {
             xAxes: [{}],
             yAxes: [
@@ -71,6 +74,7 @@ export class LineChartComponent {
             ],
         },
     };
+
     chartColors: ChartColor = [
         {
             // green
@@ -100,6 +104,7 @@ export class LineChartComponent {
             pointHoverBorderColor: "rgba(244, 67, 54, 0.8)",
         },
     ];
+
     chartLegend = true;
     chartPlugins = [chartlabels];
 

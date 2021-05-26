@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ChartDatasets, ChartOptions } from "@rinminase/ng-charts";
+import * as chartlabels from "chartjs-plugin-datalabels";
 
 import { AppService } from "@app/app.service";
 
@@ -30,6 +31,7 @@ export class BubbleChartComponent {
         },
     };
 
+    chartPlugins = [chartlabels];
     chartLegend = true;
 
     chartData: ChartDatasets = [
