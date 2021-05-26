@@ -1,3 +1,14 @@
 <p>
-    scatter-chart works!
+    <canvas baseChart
+        chartType="scatter"
+        [datasets]="chartData"
+        [options]="chartOptions">
+    </canvas>
+
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
