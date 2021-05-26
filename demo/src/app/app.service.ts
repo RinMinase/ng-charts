@@ -7,11 +7,23 @@ export class AppService {
 
     public randomize(
         values: Array<number | null | undefined | number[]> | ChartPoint[],
+        specialChart?: string,
     ): Array<number> {
         const returnValue = [];
-        values.forEach(() => {
-            returnValue.push(Math.round(Math.random() * 100));
-        });
+
+        if (!specialChart) {
+            values.forEach(() => {
+                returnValue.push(Math.round(Math.random() * 100));
+            });
+        } else if (specialChart === "bubble") {
+            values.forEach(() => {
+                returnValue.push({
+                    x: Math.round(Math.random() * 30),
+                    y: Math.round(Math.random() * 30),
+                    r: Math.round(Math.random() * 50),
+                });
+            });
+        }
 
         return returnValue;
     }
