@@ -5,6 +5,7 @@ import { Component, OnInit, Input } from "@angular/core";
     template: `
         <div>
             <h1 class="mat-display-1 mt-1 mb-2">{{ heading }}</h1>
+            <div [innerHTML]="notes"></div>
             <div><ng-content></ng-content></div>
             <div style="min-height: 300px;">
                 <mat-tab-group>
@@ -25,12 +26,17 @@ export class ContainerComponent implements OnInit {
     html: string;
     ts: string;
     heading: string;
+    notes?: string;
 
     ngOnInit(): void {
         if (charts[this.type]) {
             this.heading = charts[this.type].heading;
             this.html = charts[this.type].html.default;
             this.ts = charts[this.type].ts.default;
+
+            if (charts[this.type].notes) {
+                this.notes = charts[this.type].notes.default;
+            }
         }
     }
 }
@@ -83,6 +89,7 @@ export const charts = {
     },
     finance: {
         heading: "Financial Chart",
+        notes: require("!!raw-loader!../financial-chart/financial-chart-notes.html"),
         ts: require("!!raw-loader!../financial-chart/financial-chart.component.ts"),
         html: require("!!raw-loader!../financial-chart/financial-chart.component.html"),
     },
