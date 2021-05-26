@@ -76,7 +76,7 @@
         "lodash-es": "_"
       }
     },
-    "whitelistedNonPeerDependencies": [
+    "allowedNonPeerDependencies": [
       "@types/chart.js",
       "chart.js",
       "lodash-es"
