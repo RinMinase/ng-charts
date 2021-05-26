@@ -1,3 +1,14 @@
 <p>
-    radar-chart works!
+    <canvas baseChart
+        chartType="radar"
+        [datasets]="chartData"
+        [options]="chartOptions"
+        [labels]="chartLabels">
+    </canvas>
+    <button mat-button
+        mat-raised-button
+        color="primary"
+        (click)="randomizer()">
+        Randomize
+    </button>
 </p>
