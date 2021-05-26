@@ -18,6 +18,7 @@ export class BarChartComponent {
             },
         },
     };
+
     chartLabels: ChartLabel[] = [
         "2006",
         "2007",
@@ -27,8 +28,10 @@ export class BarChartComponent {
         "2011",
         "2012",
     ];
+
     chartLegend = true;
     chartPlugins = [];
+
     chartData: ChartDatasets = [
         { data: [65, 59, 80, 81, 56, 55, 40], label: "Series A" },
         { data: [28, 48, 40, 19, 86, 27, 90], label: "Series B" },
