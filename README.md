@@ -23,8 +23,14 @@ Beautiful charts for Angular based on ng2-chartjs.
 
 This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
 
-## Usage & Demo
+## Version Information
 
+| Version        | Chart.js Version | Branch |
+| -------------- | ---------------- | ------ |
+| `4.x`          | 2.9              | master |
+| `5.x` _(beta)_ | 3.5              | dev    |
+
+## Usage & Demo
 
 ### Installation
 
@@ -160,8 +166,6 @@ Thanks for understanding!
 ## FAQ
 
 ### Why re-create this library when there is already an existing one at [ng2-charts](https://github.com/valor-software/ng2-charts) created by Valor Software?
-
-- The library also doesn't support Angular 9 as of now.
 
 - The library doesn't seem to remove chart.js as its peer dependency, but needs it a lot. I seem to see the need to remove the additional library installed for your project and have this library install it instead
 
