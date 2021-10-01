@@ -53,7 +53,7 @@
     "auto-changelog": "^2.3.0",
     "bestzip": "^2.2.0",
     "ng-packagr": "^12.2.2",
-    "release-it": "^14.11.0",
+    "release-it": "^14.11.6",
     "rxjs": "^7.3.0",
     "ts-node": "^10.2.1",
     "tslib": "^2.3.1",
