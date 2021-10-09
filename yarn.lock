@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@angular/compiler-cli@^12.2.8":
-  version "12.2.8"
-  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-12.2.8.tgz#7b6503135fc5b7e0efdf7f6859d0da09dd800b81"
-  integrity sha512-KFGYsDATUCEoY4KEVcpxyT5S0k2T14hIlmBxzmzRhsCVi2ZLti5E2tnqQi2klKCFxmsk7VYd3kqWRJWBZieQtA==
+"@angular/compiler-cli@^12.2.9":
+  version "12.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-12.2.9.tgz#a7c7292f5bb0324f374f978b9bd5ff34bc67d91a"
+  integrity sha512-jswNKFm3MNcY4oDO/8HcFLLVxDEcTOyqp9CeKzlbjBKb04Ntjaqpm9CKzlxLOtJJj9BSMHTz1CjE0hSNv76NPg==
   dependencies:
     "@babel/core" "^7.8.6"
     "@babel/types" "^7.8.6"
@@ -22,17 +22,17 @@
     tslib "^2.2.0"
     yargs "^17.0.0"
 
-"@angular/compiler@^12.2.8":
-  version "12.2.8"
-  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-12.2.8.tgz#fb71e5bac8f6b8c7284e6ffe764404a1eccf8f5e"
-  integrity sha512-11AswnrVeipKibK0Ra4n3TjZfr6QYpiNGPvT6XQB9NLgSthAPTa9T1Bige2yQhgyWNaZsOPko/jhhNS8ufSZCg==
+"@angular/compiler@^12.2.9":
+  version "12.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/compiler/-/compiler-12.2.9.tgz#f9a9426a1febb01edddedb2f881f8cdf56ff2c23"
+  integrity sha512-87Qn8HuQ+6ECUnapQxpgIvwuUs6i1oM6lmLSKrYe0/WpIzTabB30eXWCKfvqYrv516cMdrq+nLCIXJx1tPqzSw==
   dependencies:
     tslib "^2.2.0"
 
-"@angular/core@^12.2.8":
-  version "12.2.8"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-12.2.8.tgz#6b85470f163d07f40c16868f19f953b9d2731208"
-  integrity sha512-ko7RJ8BImcMiI64Z8DM54ylkUwu2r/Mhf37BME0EEm+RIrH0KUVzrFOl2rMaxKBZUtY9qaxvVt43bZPrvN2acg==
+"@angular/core@^12.2.9":
+  version "12.2.9"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-12.2.9.tgz#66cd2268e479e6a647ad08cac45a9dbb42597736"
+  integrity sha512-RgUmn0YM4GMcViTEkWxDVGCyz8+subF+98dJie+bwJszATMxRK2TSINEg2X/Y0LgNxpRt4mKzIK2kz62oaDH7g==
   dependencies:
     tslib "^2.2.0"
 
@@ -2384,10 +2384,10 @@ new-github-release-url@1.0.0:
   dependencies:
     type-fest "^0.4.1"
 
-ng-packagr@^12.2.2:
-  version "12.2.2"
-  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-12.2.2.tgz#201ca02e96d05fc600082d775bfad07c0706f23c"
-  integrity sha512-b5P5ZAdiXqUbmuBfNzqXVo/myynOiV13ryxEvv4TMLkiY7nPCP4yFz5A9v0aauC4VqIPzsYDNikcfmuZeOO0Sg==
+ng-packagr@^12.2.3:
+  version "12.2.3"
+  resolved "https://registry.yarnpkg.com/ng-packagr/-/ng-packagr-12.2.3.tgz#1597f8e70a78ab88bb395675358942bfc14cbc07"
+  integrity sha512-2KHoglc7UgJMnzkytzZ1wU+IEkb6UrxoU4QZxnF5BSFh9vjUra2nCXH+EKkvxD3WTj0ikXmNIMeNWbwoZpGkgA==
   dependencies:
     "@rollup/plugin-commonjs" "^20.0.0"
     "@rollup/plugin-json" "^4.1.0"
@@ -3278,10 +3278,17 @@ rxjs@^6.5.0:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@^7.2.0, rxjs@^7.3.0:
+rxjs@^7.2.0:
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.3.0.tgz#39fe4f3461dc1e50be1475b2b85a0a88c1e938c6"
   integrity sha512-p2yuGIg9S1epc3vrjKf6iVb3RCaAYjYskkO+jHIaV0IjOPlJop4UnodOoFb2xeNwlguqLYvGw1b1McillYb5Gw==
+  dependencies:
+    tslib "~2.1.0"
+
+rxjs@^7.4.0:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.4.0.tgz#a12a44d7eebf016f5ff2441b87f28c9a51cebc68"
+  integrity sha512-7SQDi7xeTMCJpqViXh8gL/lebcwlp3d831F05+9B44A4B0WfsEwUQHR64gsH1kvJ+Ep/J9K2+n1hVl1CsGN23w==
   dependencies:
     tslib "~2.1.0"
 
