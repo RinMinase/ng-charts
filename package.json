@@ -41,9 +41,9 @@
     "rxjs": ">=6.4.0"
   },
   "dependencies": {
-    "@types/chart.js": "2.9.34",
-    "chart.js": "^3.5.1",
-    "lodash-es": "^4.17.21"
+    "@types/chart.js": "~2.9.34",
+    "chart.js": "~3.5.1",
+    "lodash-es": "~4.17.21"
   },
   "devDependencies": {
     "@angular/compiler": "^12.2.9",
