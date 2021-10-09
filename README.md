@@ -25,10 +25,10 @@ This library is updated for usage with Angular 9 and removes chart.js as a peer 
 
 ## Version Information
 
-| Version        | Chart.js Version | Branch |
-| -------------- | ---------------- | ------ |
-| `4.x`          | 2.9              | master |
-| `5.x` _(beta)_ | 3.5              | dev    |
+| Version             | Chart.js Version | Branch |
+| ------------------- | ---------------- | ------ |
+| `4.x`               | 2.9              | master |
+| `5.x` _(beta/next)_ | 3.5              | dev    |
 
 ## Usage & Demo
 
@@ -54,7 +54,7 @@ If you're using **Chart.js version 2.9**
 ```html
   <body>
     ...
-    <script src=https://cdn.jsdelivr.net/npm/@rinminase/ng-charts@4></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rinminase/ng-charts"></script>
   </body>
 ```
 
@@ -62,7 +62,7 @@ If you're using **Chart.js version 3.5+**
 ```html
   <body>
     ...
-    <script src=https://cdn.jsdelivr.net/npm/@rinminase/ng-charts@5></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rinminase/ng-charts@next"></script>
   </body>
 ```
 _Please note that version 5 of this package is still currently in beta and has not been thoroughly tested_
