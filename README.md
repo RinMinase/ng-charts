@@ -54,7 +54,7 @@ If you're using **Chart.js version 2.9**
 ```html
   <body>
     ...
-    <script src=https://cdn.jsdelivr.net/npm/@rinminase/ng-charts></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rinminase/ng-charts"></script>
   </body>
 ```
 
@@ -62,7 +62,7 @@ If you're using **Chart.js version 3.5+**
 ```html
   <body>
     ...
-    <script src=https://cdn.jsdelivr.net/npm/@rinminase/ng-charts@next></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rinminase/ng-charts@next"></script>
   </body>
 ```
 _Please note that version 5 of this package is still currently in beta and has not been thoroughly tested_
