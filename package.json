@@ -28,7 +28,7 @@
     "dev:prettier": "code --install-extension esbenp.prettier-vscode --force ",
     "demo": "cd demo && npm run start && cd ..",
     "demo:build": "cd demo && npm run build && cd ..",
-    "build": "ng-packagr -p package.json && rm -rf dist/out-tsc",
+    "build": "ng-packagr -p ng-package.json && rm -rf dist/out-tsc",
     "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-charts-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
     "release": "release-it --ci --no-increment --verbose || true",
@@ -46,15 +46,15 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "@angular/compiler": "^12.2.9",
-    "@angular/compiler-cli": "^12.2.9",
-    "@angular/core": "^12.2.9",
+    "@angular/compiler": "^13.1.1",
+    "@angular/compiler-cli": "^13.1.1",
+    "@angular/core": "^13.1.1",
     "@types/lodash-es": "^4.17.4",
     "auto-changelog": "^2.3.0",
     "bestzip": "^2.2.0",
-    "ng-packagr": "^12.2.3",
+    "ng-packagr": "^13.1.2",
     "release-it": "^14.11.6",
-    "rxjs": "^7.4.0",
+    "rxjs": "^7.5.1",
     "ts-node": "^10.2.1",
     "tslib": "^2.3.1",
     "typescript": "~4.2.4",
@@ -66,21 +66,6 @@
     "unreleasedOnly": true,
     "commitLimit": 15,
     "backfillLimit": 15
-  },
-  "ngPackage": {
-    "dest": "./dist",
-    "lib": {
-      "entryFile": "src/public_api.ts",
-      "umdModuleIds": {
-        "chart.js": "chart_js",
-        "lodash-es": "_"
-      }
-    },
-    "allowedNonPeerDependencies": [
-      "@types/chart.js",
-      "chart.js",
-      "lodash-es"
-    ]
   },
   "release-it": {
     "git": {
