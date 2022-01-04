@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@types/chart.js": "~2.9.34",
-    "chart.js": "~3.5.1",
+    "chart.js": "~3.7.0",
     "lodash-es": "~4.17.21"
   },
   "devDependencies": {
