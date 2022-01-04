@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "dest": "./dist",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  },
+  "allowedNonPeerDependencies": [
+    "@types/chart.js",
+    "chart.js",
+    "lodash-es"
+  ]
+}
