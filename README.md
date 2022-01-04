@@ -21,7 +21,7 @@
 
 Beautiful charts for Angular based on ng2-chartjs.
 
-This library is updated for usage with Angular 9 and removes chart.js as a peer dependency.
+This library is updated for usage with Angular 13 and removes chart.js as a peer dependency.
 
 ## Version Information
 
@@ -201,7 +201,7 @@ Thanks for understanding!
 - Yes. This is alongside with its other peer dependencies (angular and zonejs)
 
 ## Built with
-* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 12](https://angular.io/) - Library setup
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 13](https://angular.io/) - Library setup
 * <img width=20 height=20 src="https://www.typescriptlang.org/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
