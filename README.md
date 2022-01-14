@@ -206,3 +206,6 @@ Thanks for understanding!
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
 * <img width=20 height=20 src="https://gblobscdn.gitbook.com/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
+
+With 4.2.1, no __ivy_ngcc is generated. Please add its details.
+
