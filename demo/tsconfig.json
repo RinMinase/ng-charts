@@ -12,6 +12,7 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "typeRoots": ["node_modules/@types", "./types"],
     "paths": {
       "@app/*": ["src/app/*"]
     }
